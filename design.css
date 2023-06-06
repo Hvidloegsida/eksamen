@@ -11,7 +11,37 @@
 }
 
 body {
-  background-color: blue;
+  background-color: #ffe9e0;
+}
+nav {
+  background-color: #fef5f0;
+  display: flex;
+  align-items: center;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 2%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin-left: 39%;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  color: #6e3e03;
+  font-family: "al_nevrada_personuploadedfile";
+  padding: 29px;
+  font-size: 124%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*header*/
@@ -31,7 +61,7 @@ nav .logo {
 }
 
 /*Burgermenu*/
-/* .burger {
+.burger {
   width: 30px;
   height: 20px;
   cursor: pointer;
@@ -45,7 +75,42 @@ nav .logo {
 }
 .burger {
   display: none;
-} */
+}
 
 @media (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #bdffad;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
 }
