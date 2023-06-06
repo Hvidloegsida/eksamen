@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "al_nevrada_personuploadedfile";
+  src: url("al_nevrada_personaluseonly-webfont.woff2") format("woff2"), url("al_nevrada_personaluseonly-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: blue;
+}
+
+/*header*/
+
+/*Husk at sætte active class på de andre html sidder*/
+nav ul li a:hover,
+nav ul li a:active {
+  color: #ea667f;
+}
+
+nav .logo {
+  background-image: url(billeder/idalogo.png);
+  width: 10%;
+  background-size: cover;
+  aspect-ratio: 2/1;
+  margin-bottom: 0.5%;
+}
+
+/*Burgermenu*/
+/* .burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #ea667f;
+  margin-bottom: 5px;
+}
+.burger {
+  display: none;
+} */
+
+@media (max-width: 600px) {
+}
