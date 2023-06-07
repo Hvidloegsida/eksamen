@@ -16,7 +16,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "al_nevrada_personuploadedfile";
   list-style: none;
   text-decoration: none;
 }
@@ -70,6 +69,7 @@ nav ul li a {
   border-radius: 5px;
   letter-spacing: 1px;
   transition: all 0.3s ease;
+  font-family: "al_nevrada_personuploadedfile";
 }
 
 nav ul li a.active,
@@ -226,14 +226,14 @@ footer {
 
 .knap {
   width: 100%;
-  height: 16%;
+  height: 5%;
   margin-top: -6%;
   margin-left: 0%;
 }
 .knapbbypink {
   background-color: #ffe9e0;
   width: 22%;
-  height: 82%;
+  height: 244%;
   border-radius: 60px;
   margin-top: -8%;
   margin-left: 34%;
@@ -252,12 +252,120 @@ footer {
 .knappink {
   background-color: #ea667f;
   width: 22%;
-  height: 82%;
+  height: 244%;
   border-radius: 60px;
-  margin-top: -4.54%;
+  margin-top: -4.3%;
   margin-left: 36%;
   z-index: 400;
   position: relative;
+}
+
+/*OMG MIG SIDE*/
+
+.ommig_grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33% 33% 33%;
+}
+
+.ommig_overskrift {
+  grid-column: 2;
+  grid-row: 1;
+  color: #ea667f;
+  font-family: "al_nevrada_personuploadedfile";
+  margin-top: 11%;
+  margin-left: -30%;
+}
+
+.ommig_txt {
+  grid-column: 2;
+  grid-row: 2;
+  color: #6e3e03;
+  font-family: "playfair_displayregular";
+  margin-top: 1%;
+  margin-left: -35%;
+  margin-right: 83%;
+}
+
+.ommig_pic {
+  grid-column: 1;
+  grid-row: 1/4;
+  background-image: url(billeder/mig.PNG);
+  background-size: cover;
+  width: 23%;
+  height: 68%;
+  position: absolute;
+  top: 14%;
+  left: 5%;
+}
+
+#ommigknap {
+  position: absolute;
+  top: 112%;
+  left: -2%;
+}
+
+#ommigknaptxt {
+  font-family: "playfair_displayregular";
+}
+
+/*CV SIDE */
+
+.cv_grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 14% 14% 14% 14% 14% 14% 14%;
+  margin-top: 6%;
+  margin-left: -35%;
+}
+
+.cv_overskrift {
+  color: #ea667f;
+  font-family: "al_nevrada_personuploadedfile";
+}
+
+.cv_txt {
+  font-family: "playfair_displayregular";
+  color: #6e3e03;
+}
+
+.cv_overskrift1 {
+  grid-column: 2;
+  grid-row: 1;
+  color: #ea667f;
+  font-family: "al_nevrada_personuploadedfile";
+  text-align: center;
+  margin-left: -78%;
+}
+
+.cvo1 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.cv1 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.cvo2 {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.cv2 {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.cvo3 {
+  grid-column: 2;
+  grid-row: 6;
+}
+
+.cv3 {
+  grid-column: 2;
+  grid-row: 7;
 }
 
 @media (max-width: 1000px) {
