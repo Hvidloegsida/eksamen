@@ -11,25 +11,35 @@
   font-weight: normal;
   font-style: normal;
 }
-/*header*/
-header {
-  display: flex;
-  background-color: #fef5f0;
-  margin-left: 1%;
-  padding-right: 40%;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  position: fixed;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "al_nevrada_personuploadedfile";
+  list-style: none;
+  text-decoration: none;
 }
+
 body {
   background-color: #ffe9e0;
 }
+
 nav {
   display: flex;
+  height: 61px;
+  width: 94%;
+  background: #fef5f0;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  margin-left: 3%;
+  margin-top: 1%;
+  position: fixed;
 }
-.logo {
-  flex: 1;
-}
+
 .logopic {
   background-image: url(billeder/idalogo.png);
   width: 128px;
@@ -37,78 +47,157 @@ nav {
   aspect-ratio: 2/1;
   background-size: cover;
   margin-bottom: -1%;
-  margin-top: -1%;
+  margin-top: -6%;
+  margin-left: -73%;
 }
 
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
-nav li {
-  margin-left: 10px;
+nav ul li {
+  margin: 0 5px;
 }
 
-nav a {
-  display: block;
-  padding: 20px;
-  text-decoration: none;
+nav ul li a {
   color: #6e3e03;
-  border: 2px solid transparent;
-  font-family: "al_nevrada_personuploadedfile";
+  text-decoration: none;
+  font-size: 18px;
   font-weight: 500;
-  font-size: 116%;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
 }
 
-/*Husk at sætte active class på de andre html sidder*/
-nav ul li a:hover,
-nav ul li a:active {
+nav ul li a.active,
+nav ul li a:hover {
   color: #ea667f;
 }
 
-/*Burgermenu*/
-.burger {
-  width: 30px;
-  height: 20px;
+nav .menu-btn i {
+  color: #ea667f;
+  font-size: 22px;
   cursor: pointer;
-}
-
-.burger .line {
-  width: 100%;
-  height: 2px;
-  background-color: #ea667f;
-  margin-bottom: 5px;
-}
-.burger {
   display: none;
 }
 
-/* ANDET */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* ANDET PÅ SIDERNE  */
 
 .crystal {
   background-image: url(billeder/crystalfdone.png);
-  width: 19%;
+  width: 19.3%;
   aspect-ratio: 3/6;
   background-size: cover;
   z-index: 1000;
   position: absolute;
   left: 66%;
-  top: 12%;
+  top: 12.3%;
   pointer-events: none;
 }
 
 .box {
   background-color: #fef5f0;
-  width: 96%;
+  width: 94%;
   height: 70%;
   position: fixed;
-  margin-left: 1%;
+  margin-left: 3%;
   top: 18%;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   overflow-y: scroll;
 }
+
+footer {
+  background-color: #fef5f0;
+  width: 94%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  padding-top: 3%;
+  margin-left: 3%;
+  display: flex;
+  position: fixed;
+  margin-top: 43%;
+}
+
+.socials {
+  font-family: "al_nevrada_personuploadedfile";
+  color: #6e3e03;
+  position: absolute;
+  left: 2%;
+  top: 37%;
+}
+
+.instagram {
+  background-image: url(billeder/bruninsta.png);
+  background-size: cover;
+  width: 44.5%;
+  height: 134%;
+  top: -36%;
+  left: 113%;
+  position: absolute;
+}
+
+.facebook {
+  background-image: url(billeder/brunface.png);
+  background-size: cover;
+  width: 44.5%;
+  height: 134%;
+  top: -36%;
+  left: 164%;
+  position: absolute;
+}
+
+.twitter {
+  background-image: url(billeder/bruntwitter.png);
+  background-size: cover;
+  width: 44.5%;
+  height: 134%;
+  top: -36%;
+  left: 218%;
+  position: absolute;
+}
+
+.copyright {
+  font-family: "al_nevrada_personuploadedfile";
+  color: #6e3e03;
+  position: absolute;
+  left: 30%;
+  top: 37%;
+}
+
+.kontakt {
+  font-family: "al_nevrada_personuploadedfile";
+  color: #6e3e03;
+  position: absolute;
+  left: 66%;
+  word-spacing: 224%;
+  top: 37%;
+}
+
+.linje1 {
+  background-color: #ea667f;
+  position: absolute;
+  width: 0.3%;
+  height: 77%;
+  top: 12%;
+  left: 25%;
+}
+
+.linje2 {
+  background-color: #ea667f;
+  position: absolute;
+  width: 0.3%;
+  height: 77%;
+  top: 12%;
+  left: 63%;
+}
+
+/**INDHOLD PÅ INDEX SIDEN**/
 
 .indexlogo {
   background-image: url(billeder/idalogo.png);
@@ -137,17 +226,19 @@ nav ul li a:active {
 
 .knap {
   width: 100%;
-  height: 91%;
+  height: 16%;
   margin-top: -6%;
   margin-left: 0%;
 }
 .knapbbypink {
   background-color: #ffe9e0;
   width: 22%;
-  height: 13%;
+  height: 82%;
   border-radius: 60px;
   margin-top: -8%;
   margin-left: 34%;
+  z-index: 500;
+  position: relative;
 }
 
 .knaptxt {
@@ -158,53 +249,78 @@ nav ul li a:active {
   padding-top: 6%;
 }
 
-@media (max-width: 600px) {
-  .menu {
-    display: none;
+.knappink {
+  background-color: #ea667f;
+  width: 22%;
+  height: 82%;
+  border-radius: 60px;
+  margin-top: -4.54%;
+  margin-left: 36%;
+  z-index: 400;
+  position: relative;
+}
+
+@media (max-width: 1000px) {
+  nav {
+    padding: 0 40px 0 50px;
+    z-index: 4;
   }
-  .burger {
+}
+
+@media (max-width: 920px) {
+  nav .menu-btn i {
     display: block;
-    padding-right: 57%;
-    margin-left: -15%;
-    margin-top: 35%;
-  }
-  .burger.active .line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+    z-index: 4;
   }
 
-  .burger.active .line:nth-child(2) {
-    opacity: 0;
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
   }
 
-  .burger.active .line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-  }
-
-  nav.active .menu {
-    display: block;
-    background-color: #fef5f0;
-    position: absolute;
-    top: 74px;
-    left: 0;
+  nav ul {
+    position: fixed;
+    top: 64px;
+    left: -100%;
+    background: #fef5f0;
+    height: 100vh;
     width: 94%;
-    z-index: 1;
-    margin-left: 3%;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-    padding-bottom: 81%;
-  }
-
-  nav.active .menu li {
-    margin: 10px 20px;
-  }
-
-  nav.active .menu a {
-    font-size: 24px;
     text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+    z-index: 4;
+    margin-left: 3%;
   }
-  header {
-    padding-bottom: 2%;
+
+  #click:checked ~ ul {
+    left: 0;
   }
+
+  nav ul li {
+    width: 100%;
+    margin: 40px 0;
+    z-index: 4;
+  }
+
+  nav ul li a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 4;
+  }
+
+  #click:checked ~ ul li a {
+    margin-left: 0px;
+  }
+
+  nav ul li a.active,
   nav ul li a:hover {
+    background: none;
     color: #ea667f;
+  }
+
+  .logopic {
+    margin-left: -41%;
   }
 }
