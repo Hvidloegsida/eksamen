@@ -5,12 +5,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "playfair_displayregular";
+  src: url("playfairdisplay-variablefont_wght-webfont.woff2") format("woff2"), url("playfairdisplay-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*header*/
 header {
   display: flex;
   background-color: #fef5f0;
   margin-left: 1%;
-  margin-right: 1%;
+  padding-right: 40%;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  position: fixed;
 }
 body {
   background-color: #ffe9e0;
@@ -54,8 +62,6 @@ nav a {
   font-size: 116%;
 }
 
-/*header*/
-
 /*Husk at sætte active class på de andre html sidder*/
 nav ul li a:hover,
 nav ul li a:active {
@@ -77,6 +83,79 @@ nav ul li a:active {
 }
 .burger {
   display: none;
+}
+
+/* ANDET */
+
+.crystal {
+  background-image: url(billeder/crystalfdone.png);
+  width: 19%;
+  aspect-ratio: 3/6;
+  background-size: cover;
+  z-index: 1000;
+  position: absolute;
+  left: 66%;
+  top: 12%;
+  pointer-events: none;
+}
+
+.box {
+  background-color: #fef5f0;
+  width: 96%;
+  height: 70%;
+  position: fixed;
+  margin-left: 1%;
+  top: 18%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+}
+
+.indexlogo {
+  background-image: url(billeder/idalogo.png);
+  background-size: cover;
+  width: 41%;
+  height: 70%;
+  margin-top: 7%;
+  margin-left: 19%;
+}
+
+.indexportfolio {
+  font-family: "al_nevrada_personuploadedfile";
+  color: #6e3e03;
+  font-size: 265%;
+  margin-top: -19%;
+  margin-left: 46%;
+}
+
+.indexcitat {
+  font-family: "playfair_displayregular";
+  color: #6e3e03;
+  font-size: 116%;
+  margin-top: 12.5%;
+  margin-left: 11%;
+}
+
+.knap {
+  width: 100%;
+  height: 91%;
+  margin-top: -6%;
+  margin-left: 0%;
+}
+.knapbbypink {
+  background-color: #ffe9e0;
+  width: 22%;
+  height: 13%;
+  border-radius: 60px;
+  margin-top: -8%;
+  margin-left: 34%;
+}
+
+.knaptxt {
+  font-family: "al_nevrada_personuploadedfile";
+  color: #6e3e03;
+  font-size: 160%;
+  text-align: center;
+  padding-top: 6%;
 }
 
 @media (max-width: 600px) {
