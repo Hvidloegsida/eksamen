@@ -322,11 +322,14 @@ footer {
 .cv_overskrift {
   color: #ea667f;
   font-family: "al_nevrada_personuploadedfile";
+  margin-bottom: 1%;
+  font-size: 100%;
 }
 
 .cv_txt {
   font-family: "playfair_displayregular";
   color: #6e3e03;
+  margin-bottom: 8%;
 }
 
 .cv_overskrift1 {
@@ -336,6 +339,11 @@ footer {
   font-family: "al_nevrada_personuploadedfile";
   text-align: center;
   margin-left: -78%;
+}
+.cv_txtsize {
+  margin-left: 101%;
+  margin-right: -48%;
+  margin-top: 6%;
 }
 
 .cvo1 {
