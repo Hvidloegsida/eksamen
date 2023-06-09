@@ -1,0 +1,44 @@
+.studiegallery {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.studieimgbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.studieimg {
+  width: 100px;
+  height: 275px;
+  margin: 10px;
+  border-radius: 50px;
+  background: url(billeder/studiestart1.png);
+  background-size: cover;
+  background-position: center;
+  transition: width 0.5s;
+}
+.studieimg:nth-child(2) {
+  background: url(billeder/studiestart2.png);
+  background-size: cover;
+  background-position: center;
+}
+.studieimg:nth-child(3) {
+  background: url(billeder/studiestart3.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.studieimg:nth-child(4) {
+  background: url(billeder/studiestart4.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.studieimg:hover {
+  width: 404px;
+  cursor: pointer;
+}
