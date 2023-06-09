@@ -138,9 +138,9 @@ nav .drop-down3:hover {
   z-index: 1001;
 }
 nav .drop-down4 {
-  height: 30px;
-  width: 155.5px;
-  margin-left: 54%;
+  height: 130px; /* 172px = (38 (li) + 5 (li border)) * 4 (number of li) */
+  width: 137.5px;
+  margin-left: 79%;
   list-style: none;
   overflow: hidden; /* When ul height is reduced, ensure overflowing li are not shown */
   overflow: hidden;
@@ -151,6 +151,18 @@ nav .drop-down4 {
   z-index: 1000;
   background-color: #fef5f0;
 }
+
+nav .drop-down4.closed {
+  margin-left: 54%;
+  height: 42px;
+  margin-top: 0%;
+  padding: 3px;
+  padding-top: 0.7%;
+  padding-right: 2.5%;
+  padding-left: 0%;
+  width: 12.5%;
+}
+
 nav .drop-down5 {
   height: 130px; /* 172px = (38 (li) + 5 (li border)) * 4 (number of li) */
   width: 137.5px;
@@ -191,8 +203,8 @@ nav .drop-down5:hover {
   z-index: 1001;
 }
 nav .drop-down6 {
-  height: 23px;
-  width: 117.5px;
+  height: 130px; /* 172px = (38 (li) + 5 (li border)) * 4 (number of li) */
+  width: 137.5px;
   margin-left: 79%;
   list-style: none;
   overflow: hidden; /* When ul height is reduced, ensure overflowing li are not shown */
@@ -204,6 +216,13 @@ nav .drop-down6 {
   z-index: 1000;
   background-color: #fef5f0;
 }
+nav .drop-down6.closed {
+  margin-left: 77%;
+  height: 42px;
+  margin-top: 0%;
+  padding: 10px;
+}
+
 .border {
   border-style: solid;
   color: #ea667f;
@@ -262,6 +281,7 @@ nav ul li a {
   border-radius: 5px;
   letter-spacing: 1px;
   font-family: "al_nevrada_personuploadedfile";
+  white-space: nowrap;
 }
 
 nav ul li a.active,
@@ -287,12 +307,12 @@ input[type="checkbox"] {
   width: 19.3%;
   aspect-ratio: 3/6;
   background-size: cover;
-  z-index: 1000;
-  position: absolute;
+  z-index: 800;
+  position: fixed;
   left: 66%;
   top: 12.3%;
   pointer-events: none;
-  z-index: 800;
+  overflow: visible;
 }
 
 .box {
@@ -411,7 +431,6 @@ footer {
   margin-top: 7%;
   margin-left: 19%;
 }
-
 .indexportfolio {
   font-family: "al_nevrada_personuploadedfile";
   color: #6e3e03;
@@ -1449,20 +1468,29 @@ footer {
 }
 
 @media (max-width: 1000px) {
-  nav {
-    padding: 0 40px 0 50px;
-    z-index: 4;
-  }
 }
 
 @media (max-width: 920px) {
+  nav {
+    padding: 0 40px 0 50px;
+    z-index: 4;
+    position: fixed;
+    margin-top: -4%;
+    width: 92%;
+    margin-left: 3%;
+    top: 2.5%;
+  }
   nav .menu-btn i {
     display: block;
     z-index: 4;
+    margin-left: 1567%;
   }
 
   #click:checked ~ .menu-btn i:before {
     content: "\f00d";
+    left: 92%;
+    position: absolute;
+    top: 31%;
   }
 
   nav ul {
@@ -1481,12 +1509,16 @@ footer {
 
   #click:checked ~ ul {
     left: 0;
+    margin-left: -1%;
+    padding-right: 63%;
+    padding-left: 38%;
   }
 
   nav ul li {
     width: 100%;
     margin: 40px 0;
     z-index: 4;
+    margin-top: 1%;
   }
 
   nav ul li a {
@@ -1496,10 +1528,18 @@ footer {
     font-size: 20px;
     transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     z-index: 4;
+    text-align: center;
   }
 
-  #click:checked ~ ul li a {
-    margin-left: 0px;
+  #click:checked ~ .drop-down4 a {
+    margin-left: -8px;
+  }
+  #click:checked ~ .drop-down6 a {
+    margin-left: -8px;
+  }
+
+  #click:checked ~ ul a {
+    text-align: center;
   }
 
   nav ul li a.active,
@@ -1509,6 +1549,128 @@ footer {
   }
 
   .logopic {
-    margin-left: -41%;
+    margin-left: -1%;
+    top: 0%;
+    position: fixed;
   }
+
+  nav .drop-down1.closed {
+    height: 62px;
+  }
+
+  nav .drop-down2.closed {
+    margin-left: 18%;
+    height: 62px;
+    margin-top: 10%;
+  }
+
+  nav .drop-down3.closed {
+    margin-left: 29%;
+    height: 62px;
+    margin-top: 19%;
+  }
+
+  nav .drop-down4.closed {
+    margin-top: 27%;
+    margin-left: 24%;
+    height: 62px;
+  }
+
+  nav .drop-down5.closed {
+    margin-left: 24%;
+    margin-top: 35%;
+    height: 62px;
+  }
+  nav .drop-down6.closed {
+    margin-top: 42%;
+    height: 62px;
+    margin-left: 25%;
+  }
+
+  nav .drop-down5 li:first-child a:after {
+    content: none;
+  }
+  nav .drop-down1 li:first-child a:after {
+    content: none;
+  }
+
+  nav .drop-down2 li:first-child a:after {
+    content: none;
+  }
+  nav .drop-down3 li:first-child a:after {
+    content: none;
+  }
+
+  .box {
+    width: 92%;
+    top: -4%;
+    position: fixed;
+    z-index: 1;
+    padding-bottom: 20%;
+    height: 75%;
+    padding-top: 135%;
+    margin-top: 28%;
+  }
+
+  footer {
+    margin-top: 5.5%;
+    padding-top: 25%;
+    width: 92%;
+    position: fixed;
+    top: 84%;
+  }
+
+  .indexlogo {
+    position: absolute;
+    z-index: 3;
+    top: 29%;
+    width: 93%;
+    height: 31%;
+    left: -23%;
+  }
+
+  .crystal {
+    opacity: 50%;
+    left: 39%;
+    top: 6%;
+    width: 53%;
+    height: 49%;
+    z-index: 2;
+  }
+
+  .indexportfolio {
+    font-size: 177%;
+    margin-top: -86%;
+    margin-left: 5%;
+  }
+  .indexcitat {
+    margin-top: 39.5%;
+    margin-left: 6%;
+    margin-right: 31%;
+  }
+  .knap {
+    width: 29%;
+    height: 68%;
+    margin-top: -17%;
+    margin-left: -75%;
+  }
+
+  .knappink {
+    width: 63%;
+    height: 7%;
+    top: 53.7%;
+    left: 27%;
+    position: absolute;
+  }
+
+  .knapbbypink {
+    width: 202%;
+  }
+
+  #knaptxt {
+    margin-left: 28%;
+  }
+}
+
+@media (min-width: 920px) {
 }
