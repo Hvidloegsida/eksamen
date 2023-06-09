@@ -895,6 +895,309 @@ footer {
   left: 43%;
 }
 
+/*SKETCH*/
+
+.sketchgallery {
+  width: 22%;
+  height: 57vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 53%;
+  margin-top: 4%;
+  flex-direction: column;
+}
+.sketchimgbox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sketchimg {
+  width: 62px;
+  height: 63px;
+  margin-left: 85%;
+  margin: 3px;
+  border-radius: 50px;
+  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/sketch1.png);
+  background-size: cover;
+  background-position: center;
+  transition: width 0.5s ease-in-out;
+  flex-direction: column;
+}
+.sketchimg:nth-child(2) {
+  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/sketch2.png);
+  background-size: cover;
+  background-position: center;
+}
+.sketchimg:nth-child(3) {
+  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/sketch3.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.sketch1:hover {
+  background: url(billeder/sketch1.png);
+  background-size: cover;
+}
+
+.sketch2:hover {
+  background: url(billeder/sketch2.png);
+  background-size: cover;
+}
+
+.sketch3:hover {
+  background: url(billeder/sketch3.png);
+  background-size: cover;
+}
+
+.sketchimg:hover {
+  width: 404px;
+  height: 275px;
+  margin-right: 78%;
+  cursor: pointer;
+}
+
+.sketchgrid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 25% 25% 25%;
+  margin-top: -29%;
+  margin-left: 5%;
+  margin-right: 73%;
+}
+
+.sketchoverskrift1 {
+  grid-column: 1;
+  grid-row: 1;
+  color: #ea667f;
+  font-family: "al_nevrada_personuploadedfile";
+  margin-bottom: 11%;
+  margin-left: -15%;
+  margin-top: -10%;
+}
+
+.sketchoverskrift2 {
+  grid-column: 1;
+  grid-row: 2;
+  color: #ea667f;
+  font-family: "al_nevrada_personuploadedfile";
+}
+
+.sketchtxt {
+  grid-column: 1;
+  grid-row: 3;
+  color: #6e3e03;
+  font-family: "playfair_displayregular";
+}
+#sketchknap {
+  position: absolute;
+  top: 105%;
+  left: -33%;
+}
+
+/*PROTOTYPE*/
+.protogallery {
+  width: 22%;
+  height: 57vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 53%;
+  margin-top: 4%;
+  flex-direction: column;
+}
+.protoimgbox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.protoimg {
+  width: 62px;
+  height: 63px;
+  margin-left: 85%;
+  margin: 3px;
+  border-radius: 50px;
+  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/proto1.png);
+  background-size: cover;
+  background-position: center;
+  transition: width 0.5s ease-in-out;
+  flex-direction: column;
+}
+.protoimg:nth-child(2) {
+  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/proto2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.proto1:hover {
+  background: url(billeder/proto1.png);
+  background-size: cover;
+}
+
+.proto2:hover {
+  background: url(billeder/proto2.png);
+  background-size: cover;
+}
+
+.protoimg:hover {
+  width: 404px;
+  height: 275px;
+  margin-right: 78%;
+  cursor: pointer;
+}
+
+.protogrid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 25% 25% 25%;
+  margin-top: -29%;
+  margin-left: 5%;
+  margin-right: 73%;
+}
+
+.protooverskrift1 {
+  grid-column: 1;
+  grid-row: 1;
+  color: #ea667f;
+  font-family: "al_nevrada_personuploadedfile";
+  margin-bottom: 11%;
+  margin-left: -15%;
+  margin-top: -10%;
+}
+
+.protooverskrift2 {
+  grid-column: 1;
+  grid-row: 2;
+  color: #ea667f;
+  font-family: "al_nevrada_personuploadedfile";
+}
+
+.prototxt {
+  grid-column: 1;
+  grid-row: 3;
+  color: #6e3e03;
+  font-family: "playfair_displayregular";
+}
+#protoknap {
+  position: absolute;
+  top: 105%;
+  left: -33%;
+}
+/*ANIMATION*/
+.anigallery {
+  width: 22%;
+  height: 57vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 53%;
+  margin-top: 7%;
+  flex-direction: column;
+}
+.aniimgbox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aniimg {
+  width: 62px;
+  height: 63px;
+  margin-left: 85%;
+  margin: 3px;
+  border-radius: 50px;
+  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/ani1.png);
+  background-size: cover;
+  background-position: center;
+  transition: width 0.5s ease-in-out;
+  flex-direction: column;
+}
+.aniimg:nth-child(2) {
+  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/ani2.png);
+  background-size: cover;
+  background-position: center;
+}
+.aniimg:nth-child(3) {
+  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/ani3.PNG);
+  background-size: cover;
+  background-position: center;
+}
+
+.aniimg:nth-child(4) {
+  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/ani4.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.ani1:hover {
+  background: url(billeder/ani1.png);
+  background-size: cover;
+}
+
+.ani2:hover {
+  background: url(billeder/ani2.png);
+  background-size: cover;
+}
+
+.ani3:hover {
+  background: url(billeder/ani3.PNG);
+  background-size: cover;
+}
+
+.ani4:hover {
+  background: url(billeder/ani4.png);
+  background-size: cover;
+}
+.aniimg:hover {
+  width: 404px;
+  height: 275px;
+  margin-right: 78%;
+  cursor: pointer;
+}
+
+.anigrid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 25% 25% 25%;
+  margin-top: -32%;
+  margin-left: 5%;
+  margin-right: 73%;
+}
+
+.anioverskrift1 {
+  grid-column: 1;
+  grid-row: 1;
+  color: #ea667f;
+  font-family: "al_nevrada_personuploadedfile";
+  margin-bottom: 11%;
+  margin-left: -15%;
+  margin-top: -10%;
+}
+
+.anioverskrift2 {
+  grid-column: 1;
+  grid-row: 2;
+  color: #ea667f;
+  font-family: "al_nevrada_personuploadedfile";
+}
+
+.anitxt {
+  grid-column: 1;
+  grid-row: 3;
+  color: #6e3e03;
+  font-family: "playfair_displayregular";
+}
+#aniknap {
+  position: absolute;
+  top: 105%;
+  left: -33%;
+}
+
 /*INDHOLD*/
 
 #indhold1knap {
@@ -921,6 +1224,228 @@ footer {
   position: absolute;
   top: 44%;
   left: 43%;
+}
+
+/*PASSION*/
+.passiongallery {
+  width: 22%;
+  height: 57vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 53%;
+  margin-top: 7%;
+  flex-direction: column;
+}
+.passionimgbox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.passionimg {
+  width: 62px;
+  height: 63px;
+  margin-left: 85%;
+  margin: 3px;
+  border-radius: 50px;
+  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/passion1.png);
+  background-size: cover;
+  background-position: center;
+  transition: width 0.5s ease-in-out;
+  flex-direction: column;
+}
+.passionimg:nth-child(2) {
+  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/passion2.png);
+  background-size: cover;
+  background-position: center;
+}
+.passionimg:nth-child(3) {
+  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/passion3.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.passionimg:nth-child(4) {
+  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/passion4.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.passion1:hover {
+  background: url(billeder/passion1.png);
+  background-size: cover;
+}
+
+.passion2:hover {
+  background: url(billeder/passion2.png);
+  background-size: cover;
+}
+
+.passion3:hover {
+  background: url(billeder/passion3.png);
+  background-size: cover;
+}
+
+.passion4:hover {
+  background: url(billeder/passion4.png);
+  background-size: cover;
+}
+.passionimg:hover {
+  width: 404px;
+  height: 275px;
+  margin-right: 78%;
+  cursor: pointer;
+}
+
+.passiongrid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 25% 25% 25%;
+  margin-top: -32%;
+  margin-left: 5%;
+  margin-right: 73%;
+}
+
+.passionoverskrift1 {
+  grid-column: 1;
+  grid-row: 1;
+  color: #ea667f;
+  font-family: "al_nevrada_personuploadedfile";
+  margin-bottom: 11%;
+  margin-left: -15%;
+  margin-top: -10%;
+}
+
+.passionoverskrift2 {
+  grid-column: 1;
+  grid-row: 2;
+  color: #ea667f;
+  font-family: "al_nevrada_personuploadedfile";
+}
+
+.passiontxt {
+  grid-column: 1;
+  grid-row: 3;
+  color: #6e3e03;
+  font-family: "playfair_displayregular";
+}
+#passionknap {
+  position: absolute;
+  top: 105%;
+  left: -33%;
+}
+
+/*VIRSOMHED*/
+.virksomhedgallery {
+  width: 22%;
+  height: 57vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 53%;
+  margin-top: 7%;
+  flex-direction: column;
+}
+.virksomhedimgbox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.virksomhedimg {
+  width: 62px;
+  height: 63px;
+  margin-left: 85%;
+  margin: 3px;
+  border-radius: 50px;
+  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/virksomhed1.png);
+  background-size: cover;
+  background-position: center;
+  transition: width 0.5s ease-in-out;
+  flex-direction: column;
+}
+.virksomhedimg:nth-child(2) {
+  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/virksomhed2.png);
+  background-size: cover;
+  background-position: center;
+}
+.virksomhedimg:nth-child(3) {
+  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/virksomhed3.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.virksomhedimg:nth-child(4) {
+  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/virksomhed4.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.virksomhed1:hover {
+  background: url(billeder/virksomhed1.png);
+  background-size: cover;
+}
+
+.virksomhed2:hover {
+  background: url(billeder/virksomhed2.png);
+  background-size: cover;
+}
+
+.virksomhed3:hover {
+  background: url(billeder/virksomhed3.png);
+  background-size: cover;
+}
+
+.virksomhed4:hover {
+  background: url(billeder/virksomhed4.png);
+  background-size: cover;
+}
+.virksomhedimg:hover {
+  width: 404px;
+  height: 275px;
+  margin-right: 78%;
+  cursor: pointer;
+}
+
+.virksomhedgrid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 25% 25% 25%;
+  margin-top: -32%;
+  margin-left: 5%;
+  margin-right: 73%;
+}
+
+.virksomhedoverskrift1 {
+  grid-column: 1;
+  grid-row: 1;
+  color: #ea667f;
+  font-family: "al_nevrada_personuploadedfile";
+  margin-bottom: 11%;
+  margin-left: -15%;
+  margin-top: -10%;
+}
+
+.virksomhedoverskrift2 {
+  grid-column: 1;
+  grid-row: 2;
+  color: #ea667f;
+  font-family: "al_nevrada_personuploadedfile";
+}
+
+.virksomhedtxt {
+  grid-column: 1;
+  grid-row: 3;
+  color: #6e3e03;
+  font-family: "playfair_displayregular";
+}
+#virksomhedknap {
+  position: absolute;
+  top: 105%;
+  left: -33%;
 }
 
 @media (max-width: 1000px) {
