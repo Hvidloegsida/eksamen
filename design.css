@@ -1670,6 +1670,29 @@ footer {
   #knaptxt {
     margin-left: 28%;
   }
+
+  .linje1 {
+    display: none;
+  }
+
+  .linje2 {
+    display: none;
+  }
+
+  .socials {
+    top: 11%;
+  }
+
+  .kontakt {
+    left: 2%;
+    word-spacing: 86%;
+    top: 49%;
+  }
+
+  .copyright {
+    left: 1%;
+    top: 79%;
+  }
 }
 
 @media (min-width: 920px) {
