@@ -304,7 +304,7 @@ input[type="checkbox"] {
 
 .crystal {
   background-image: url(billeder/crystalfdone.png);
-  width: 19.3%;
+  width: 18.3%;
   aspect-ratio: 3/6;
   background-size: cover;
   z-index: 800;
@@ -331,10 +331,10 @@ footer {
   width: 94%;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   padding-top: 3%;
-  margin-left: 3%;
-  display: flex;
-  position: relative;
-  margin-top: 36.5%;
+  position: fixed;
+  height: 0%;
+  top: 91%;
+  left: 3%;
 }
 
 .socials {
@@ -394,19 +394,19 @@ footer {
 
 .linje1 {
   background-color: #ea667f;
-  position: absolute;
+  position: fixed;
   width: 0.3%;
-  height: 77%;
-  top: 12%;
+  height: 4%;
+  top: 92%;
   left: 25%;
 }
 
 .linje2 {
   background-color: #ea667f;
-  position: absolute;
+  position: fixed;
   width: 0.3%;
-  height: 77%;
-  top: 12%;
+  height: 4%;
+  top: 92%;
   left: 63%;
 }
 
@@ -596,6 +596,17 @@ footer {
   font-family: "al_nevrada_personuploadedfile";
   text-align: center;
   margin-left: -78%;
+}
+.cv_pic {
+  grid-column: 1;
+  grid-row: 1/4;
+  background-image: url(billeder/mig.PNG);
+  background-size: cover;
+  width: 23%;
+  height: 68%;
+  position: absolute;
+  top: 14%;
+  left: 5%;
 }
 .cv_txtsize {
   margin-left: 101%;
@@ -1467,10 +1478,10 @@ footer {
   left: -33%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
 }
 
-@media (max-width: 920px) {
+@media (max-width: 600px) {
   nav {
     padding: 0 40px 0 50px;
     z-index: 4;
@@ -1631,10 +1642,10 @@ footer {
 
   .crystal {
     opacity: 50%;
-    left: 39%;
+    left: 55%;
     top: 6%;
-    width: 53%;
-    height: 49%;
+    width: 42%;
+    height: 39%;
     z-index: 2;
   }
 
@@ -1650,17 +1661,17 @@ footer {
   }
   .knap {
     width: 29%;
-    height: 68%;
-    margin-top: -17%;
+    height: 3%;
+    margin-top: -17.5%;
     margin-left: -75%;
   }
 
   .knappink {
-    width: 63%;
-    height: 7%;
-    top: 53.7%;
-    left: 27%;
-    position: absolute;
+    width: 215%;
+    height: 242%;
+    top: -377.3%;
+    left: 360%;
+    position: relative;
   }
 
   .knapbbypink {
@@ -1692,6 +1703,86 @@ footer {
   .copyright {
     left: 1%;
     top: 79%;
+  }
+
+  .ommig_grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33% 10% 10%;
+    margin-top: -69%;
+  }
+  .ommig_pic {
+    grid-column: 1;
+    grid-row: 1;
+    position: static;
+    aspect-ratio: 2/3;
+    position: relative;
+    position: relative;
+    top: -96%;
+    z-index: 4;
+    width: 51%;
+    height: 73%;
+  }
+  .ommig_overskrift {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: -88%;
+    margin-left: 5%;
+  }
+
+  .ommig_txt {
+    grid-column: 1;
+    grid-row: 3;
+    margin-top: -77%;
+    margin-left: 5%;
+    margin-right: 17%;
+  }
+
+  #indexknap {
+    width: 29%;
+    height: 65%;
+  }
+
+  #ommigknap {
+    left: -5%;
+  }
+
+  .cv_grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33% 33% 33;
+    margin-top: -69%;
+  }
+  .cv_pic {
+    grid-column: 1;
+    grid-row: 1;
+    aspect-ratio: 2/3;
+    position: relative;
+    top: -99%;
+    z-index: 4;
+    width: 36%;
+    height: 76%;
+    left: 30%;
+  }
+
+  .cv_overskrift1 {
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: -28%;
+    margin-top: -58%;
+  }
+
+  .cv_txtsize {
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 31%;
+    margin-right: 4%;
+    margin-top: -47%;
+  }
+
+  #indexknap {
+    width: 29%;
+    height: 65%;
   }
 }
 
