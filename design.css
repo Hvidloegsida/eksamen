@@ -1784,6 +1784,72 @@ footer {
     width: 29%;
     height: 65%;
   }
+
+  .web_overskrift1 {
+    top: 30%;
+    left: 13.5%;
+    z-index: 5;
+  }
+
+  #web1knap {
+    top: 50%;
+    left: -10%;
+  }
+
+  .web_overskrift2 {
+    top: 58%;
+    left: 26.5%;
+    z-index: 5;
+  }
+
+  #web2knap {
+    top: 78%;
+    left: -10%;
+  }
+
+  .ux_overskrift1 {
+    top: 30%;
+    left: 27.5%;
+    z-index: 5;
+  }
+
+  #ux1knap {
+    top: 50%;
+    left: -10%;
+  }
+
+  .ux_overskrift2 {
+    top: 58%;
+    left: 26.5%;
+    z-index: 5;
+  }
+
+  #ux2knap {
+    top: 78%;
+    left: -10%;
+  }
+
+  .indhold_overskrift1 {
+    top: 30%;
+    left: 18.5%;
+    z-index: 5;
+  }
+
+  #indhold1knap {
+    top: 50%;
+    left: -10%;
+  }
+
+  .indhold_overskrift2 {
+    top: 58%;
+    left: 26.5%;
+    z-index: 5;
+  }
+
+  #indhold2knap {
+    top: 78%;
+    left: -10%;
+  }
 }
 
 @media (min-width: 920px) {
