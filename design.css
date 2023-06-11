@@ -875,16 +875,6 @@ footer {
 
 /*SKETCH*/
 
-.sketchgallery {
-  width: 22%;
-  height: 57vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 53%;
-  margin-top: 4%;
-  flex-direction: column;
-}
 .sketchimgbox {
   display: flex;
   align-items: center;
@@ -903,16 +893,6 @@ footer {
   background-position: center;
   transition: width 0.5s ease-in-out;
   flex-direction: column;
-}
-.sketchimg:nth-child(2) {
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/sketch2.png);
-  background-size: cover;
-  background-position: center;
-}
-.sketchimg:nth-child(3) {
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/sketch3.png);
-  background-size: cover;
-  background-position: center;
 }
 
 .sketch1:hover {
@@ -976,16 +956,7 @@ footer {
 }
 
 /*PROTOTYPE*/
-.protogallery {
-  width: 22%;
-  height: 57vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 53%;
-  margin-top: 4%;
-  flex-direction: column;
-}
+
 .protoimgbox {
   display: flex;
   align-items: center;
@@ -1005,12 +976,6 @@ footer {
   transition: width 0.5s ease-in-out;
   flex-direction: column;
 }
-.protoimg:nth-child(2) {
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/proto2.png);
-  background-size: cover;
-  background-position: center;
-}
-
 .proto1:hover {
   background: url(billeder/proto1.png);
   background-size: cover;
@@ -1066,16 +1031,7 @@ footer {
   left: -33%;
 }
 /*ANIMATION*/
-.anigallery {
-  width: 22%;
-  height: 57vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 53%;
-  margin-top: 7%;
-  flex-direction: column;
-}
+
 .aniimgbox {
   display: flex;
   align-items: center;
@@ -1095,23 +1051,6 @@ footer {
   transition: width 0.5s ease-in-out;
   flex-direction: column;
 }
-.aniimg:nth-child(2) {
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/ani2.png);
-  background-size: cover;
-  background-position: center;
-}
-.aniimg:nth-child(3) {
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/ani3.PNG);
-  background-size: cover;
-  background-position: center;
-}
-
-.aniimg:nth-child(4) {
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/ani4.png);
-  background-size: cover;
-  background-position: center;
-}
-
 .ani1:hover {
   background: url(billeder/ani1.png);
   background-size: cover;
@@ -1205,16 +1144,6 @@ footer {
 }
 
 /*PASSION*/
-.passiongallery {
-  width: 22%;
-  height: 57vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 53%;
-  margin-top: 7%;
-  flex-direction: column;
-}
 .passionimgbox {
   display: flex;
   align-items: center;
@@ -1233,22 +1162,6 @@ footer {
   background-position: center;
   transition: width 0.5s ease-in-out;
   flex-direction: column;
-}
-.passionimg:nth-child(2) {
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/passion2.png);
-  background-size: cover;
-  background-position: center;
-}
-.passionimg:nth-child(3) {
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/passion3.png);
-  background-size: cover;
-  background-position: center;
-}
-
-.passionimg:nth-child(4) {
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/passion4.png);
-  background-size: cover;
-  background-position: center;
 }
 
 .passion1:hover {
@@ -1316,16 +1229,6 @@ footer {
 }
 
 /*VIRSOMHED*/
-.virksomhedgallery {
-  width: 22%;
-  height: 57vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 53%;
-  margin-top: 7%;
-  flex-direction: column;
-}
 .virksomhedimgbox {
   display: flex;
   align-items: center;
@@ -1344,22 +1247,6 @@ footer {
   background-position: center;
   transition: width 0.5s ease-in-out;
   flex-direction: column;
-}
-.virksomhedimg:nth-child(2) {
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/virksomhed2.png);
-  background-size: cover;
-  background-position: center;
-}
-.virksomhedimg:nth-child(3) {
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/virksomhed3.png);
-  background-size: cover;
-  background-position: center;
-}
-
-.virksomhedimg:nth-child(4) {
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/virksomhed4.png);
-  background-size: cover;
-  background-position: center;
 }
 
 .virksomhed1:hover {
@@ -1941,7 +1828,7 @@ footer {
     margin-top: 39%;
   }
 
-  .emneegallery {
+  .emnegallery {
     grid-column: 1;
     grid-row: 2;
   }
@@ -1989,6 +1876,476 @@ footer {
     grid-column: 1;
     grid-row: 4;
     background: url(billeder/emnesite4.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  #sketchknap {
+    top: 9%;
+    left: -23%;
+    height: 2%;
+  }
+  .sketchgrid1 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    position: relative;
+    z-index: 20;
+  }
+
+  .sketchgrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33% 33% 33%;
+    position: relative;
+    z-index: 3;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .sketchoverskrift1 {
+    position: relative;
+    z-index: 10;
+    margin-top: -44%;
+  }
+
+  .sketchoverskrift2 {
+    grid-column: 1;
+    grid-row: 2;
+    position: relative;
+    z-index: 7;
+    margin-right: -187%;
+    margin-top: 120%;
+  }
+
+  .sketchtxt {
+    grid-column: 1;
+    grid-row: 3;
+    position: relative;
+    margin-right: -316%;
+    margin-top: 39%;
+  }
+
+  .sketchgallery {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .sketchimgbox {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    position: relative;
+    top: 16%;
+    margin-left: 7%;
+    padding-bottom: 5%;
+  }
+
+  .sketch1 {
+    grid-column: 1;
+    grid-row: 1;
+    background: url(billeder/emnesite1.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  .sketch2 {
+    grid-column: 1;
+    grid-row: 2;
+    background: url(billeder/emnesite2.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  .sketch3 {
+    grid-column: 1;
+    grid-row: 3;
+    background: url(billeder/emnesite3.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  #protoknap {
+    top: 14%;
+    left: -23%;
+    height: 3%;
+  }
+  .protogrid1 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    position: relative;
+    z-index: 20;
+  }
+
+  .protogrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33% 33% 33%;
+    position: relative;
+    z-index: 3;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .protooverskrift1 {
+    position: relative;
+    z-index: 10;
+    margin-top: -44%;
+  }
+
+  .protooverskrift2 {
+    grid-column: 1;
+    grid-row: 2;
+    position: relative;
+    z-index: 7;
+    margin-right: -187%;
+    margin-top: 107%;
+  }
+
+  .prototxt {
+    grid-column: 1;
+    grid-row: 3;
+    position: relative;
+    margin-right: -316%;
+    margin-top: 50%;
+  }
+
+  .protogallery {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .protoimgbox {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    position: relative;
+    top: 16%;
+    margin-left: 7%;
+    padding-bottom: 5%;
+  }
+
+  .proto1 {
+    grid-column: 1;
+    grid-row: 1;
+    background: url(billeder/proto1.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  .proto2 {
+    grid-column: 1;
+    grid-row: 2;
+    background: url(billeder/proto2.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  #aniknap {
+    top: 9%;
+    left: -23%;
+    height: 1.7%;
+  }
+  .anigrid1 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    position: relative;
+    z-index: 20;
+  }
+
+  .anigrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33% 33% 33%;
+    position: relative;
+    z-index: 3;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .anioverskrift1 {
+    position: relative;
+    z-index: 10;
+    margin-top: -44%;
+  }
+
+  .anioverskrift2 {
+    grid-column: 1;
+    grid-row: 2;
+    position: relative;
+    z-index: 7;
+    margin-right: -187%;
+    margin-top: 120%;
+  }
+
+  .anitxt {
+    grid-column: 1;
+    grid-row: 3;
+    position: relative;
+    margin-right: -316%;
+    margin-top: 64%;
+  }
+
+  .anigallery {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .aniimgbox {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    position: relative;
+    top: 16%;
+    margin-left: 7%;
+    padding-bottom: 5%;
+  }
+
+  .ani1 {
+    grid-column: 1;
+    grid-row: 1;
+    background: url(billeder/ani1.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  .ani2 {
+    grid-column: 1;
+    grid-row: 2;
+    background: url(billeder/ani2.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  .ani3 {
+    grid-column: 1;
+    grid-row: 3;
+    background: url(billeder/ani3.PNG);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  .ani4 {
+    grid-column: 1;
+    grid-row: 4;
+    background: url(billeder/ani4.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  #passionknap {
+    top: 9%;
+    left: -23%;
+    height: 1.7%;
+  }
+  .passiongrid1 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    position: relative;
+    z-index: 20;
+  }
+
+  .passiongrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33% 33% 33%;
+    position: relative;
+    z-index: 3;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .passionoverskrift1 {
+    position: relative;
+    z-index: 10;
+    margin-top: -44%;
+  }
+
+  .passionoverskrift2 {
+    grid-column: 1;
+    grid-row: 2;
+    position: relative;
+    z-index: 7;
+    margin-right: -187%;
+    margin-top: 120%;
+  }
+
+  .passiontxt {
+    grid-column: 1;
+    grid-row: 3;
+    position: relative;
+    margin-right: -316%;
+    margin-top: 64%;
+  }
+
+  .passiongallery {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .passionimgbox {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    position: relative;
+    top: 16%;
+    margin-left: 7%;
+    padding-bottom: 5%;
+  }
+
+  .passion1 {
+    grid-column: 1;
+    grid-row: 1;
+    background: url(billeder/passion1.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  .passion2 {
+    grid-column: 1;
+    grid-row: 2;
+    background: url(billeder/passion2.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  .passion3 {
+    grid-column: 1;
+    grid-row: 3;
+    background: url(billeder/passion3.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  .passion4 {
+    grid-column: 1;
+    grid-row: 4;
+    background: url(billeder/passion4.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  #virksomhedknap {
+    top: 9%;
+    left: -23%;
+    height: 1.7%;
+  }
+  .virksomhedgrid1 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    position: relative;
+    z-index: 20;
+  }
+
+  .virksomhedgrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33% 33% 33%;
+    position: relative;
+    z-index: 3;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .virksomhedoverskrift1 {
+    position: relative;
+    z-index: 10;
+    margin-top: -44%;
+  }
+
+  .virksomhedoverskrift2 {
+    grid-column: 1;
+    grid-row: 2;
+    position: relative;
+    z-index: 7;
+    margin-right: -187%;
+    margin-top: 120%;
+  }
+
+  .virksomhedtxt {
+    grid-column: 1;
+    grid-row: 3;
+    position: relative;
+    margin-right: -316%;
+    margin-top: 64%;
+  }
+
+  .virksomhedgallery {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .virksomhedimgbox {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    position: relative;
+    top: 16%;
+    margin-left: 7%;
+    padding-bottom: 5%;
+  }
+
+  .virksomhed1 {
+    grid-column: 1;
+    grid-row: 1;
+    background: url(billeder/virksomhed1.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  .virksomhed2 {
+    grid-column: 1;
+    grid-row: 2;
+    background: url(billeder/virksomhed2.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  .virksomhed3 {
+    grid-column: 1;
+    grid-row: 3;
+    background: url(billeder/virksomhed3.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  .virksomhed4 {
+    grid-column: 1;
+    grid-row: 4;
+    background: url(billeder/virksomhed4.png);
     border-radius: 0%;
     width: 322px;
     height: 218px;
@@ -2049,6 +2406,128 @@ footer {
 
   .emneimg:nth-child(4) {
     background: linear-gradient(#ea667e53, #ea667e53), url(billeder/emnesite4.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .sketchgallery {
+    width: 22%;
+    height: 57vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 53%;
+    margin-top: 4%;
+    flex-direction: column;
+  }
+  .sketchimg:nth-child(2) {
+    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/sketch2.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .sketchimg:nth-child(3) {
+    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/sketch3.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .protogallery {
+    width: 22%;
+    height: 57vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 53%;
+    margin-top: 4%;
+    flex-direction: column;
+  }
+
+  .protoimg:nth-child(2) {
+    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/proto2.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .anigallery {
+    width: 22%;
+    height: 57vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 53%;
+    margin-top: 7%;
+    flex-direction: column;
+  }
+
+  .aniimg:nth-child(2) {
+    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/ani2.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .aniimg:nth-child(3) {
+    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/ani3.PNG);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .aniimg:nth-child(4) {
+    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/ani4.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .passiongallery {
+    width: 22%;
+    height: 57vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 53%;
+    margin-top: 7%;
+    flex-direction: column;
+  }
+
+  .passionimg:nth-child(2) {
+    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/passion2.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .passionimg:nth-child(3) {
+    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/passion3.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .passionimg:nth-child(4) {
+    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/passion4.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .virksomhedgallery {
+    width: 22%;
+    height: 57vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 53%;
+    margin-top: 7%;
+    flex-direction: column;
+  }
+
+  .virksomhedimg:nth-child(2) {
+    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/virksomhed2.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .virksomhedimg:nth-child(3) {
+    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/virksomhed3.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .virksomhedimg:nth-child(4) {
+    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/virksomhed4.png);
     background-size: cover;
     background-position: center;
   }
