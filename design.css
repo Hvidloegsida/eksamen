@@ -443,7 +443,7 @@ footer {
   font-family: "playfair_displayregular";
   color: #6e3e03;
   font-size: 116%;
-  margin-top: 12.5%;
+  margin-top: 41.5%;
   margin-left: 11%;
 }
 
@@ -677,16 +677,6 @@ footer {
   left: 43%;
 }
 /*STUDIESTARTSPRØVE*/
-.studiegallery {
-  width: 22%;
-  height: 57vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 53%;
-  margin-top: 7%;
-  flex-direction: column;
-}
 .studieimgbox {
   display: flex;
   align-items: center;
@@ -706,23 +696,6 @@ footer {
   transition: width 0.5s ease-in-out;
   flex-direction: column;
 }
-.studieimg:nth-child(2) {
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/studiestart2.png);
-  background-size: cover;
-  background-position: center;
-}
-.studieimg:nth-child(3) {
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/studiestart3.png);
-  background-size: cover;
-  background-position: center;
-}
-
-.studieimg:nth-child(4) {
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/studiestart4.png);
-  background-size: cover;
-  background-position: center;
-}
-
 .studie1:hover {
   background: url(billeder/studiestart1.png);
   background-size: cover;
@@ -788,16 +761,7 @@ footer {
 }
 
 /*EMNESITE*/
-.emnegallery {
-  width: 22%;
-  height: 57vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 53%;
-  margin-top: 7%;
-  flex-direction: column;
-}
+
 .emneimgbox {
   display: flex;
   align-items: center;
@@ -816,22 +780,6 @@ footer {
   background-position: center;
   transition: width 0.5s ease-in-out;
   flex-direction: column;
-}
-.emneimg:nth-child(2) {
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/emnesite2.png);
-  background-size: cover;
-  background-position: center;
-}
-.emneimg:nth-child(3) {
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/emnesite3.png);
-  background-size: cover;
-  background-position: center;
-}
-
-.emneimg:nth-child(4) {
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/emnesite4.png);
-  background-size: cover;
-  background-position: center;
 }
 
 .emne1:hover {
@@ -1619,7 +1567,7 @@ footer {
     z-index: 1;
     padding-bottom: 20%;
     height: 75%;
-    padding-top: 135%;
+    padding-top: 41%;
     margin-top: 28%;
   }
 
@@ -1639,19 +1587,9 @@ footer {
     height: 31%;
     left: -23%;
   }
-
-  .crystal {
-    opacity: 50%;
-    left: 55%;
-    top: 6%;
-    width: 42%;
-    height: 39%;
-    z-index: 2;
-  }
-
   .indexportfolio {
     font-size: 177%;
-    margin-top: -86%;
+    margin-top: 15%;
     margin-left: 5%;
   }
   .indexcitat {
@@ -1740,7 +1678,9 @@ footer {
 
   #indexknap {
     width: 29%;
-    height: 65%;
+    height: 3%;
+    position: absolute;
+    top: 66%;
   }
 
   #ommigknap {
@@ -1778,11 +1718,6 @@ footer {
     margin-left: 31%;
     margin-right: 4%;
     margin-top: -47%;
-  }
-
-  #indexknap {
-    width: 29%;
-    height: 65%;
   }
 
   .web_overskrift1 {
@@ -1850,7 +1785,271 @@ footer {
     top: 78%;
     left: -10%;
   }
+
+  #studiestartknap {
+    top: 9%;
+    left: -23%;
+    height: 1.7%;
+  }
+  .studiegrid1 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    position: relative;
+    z-index: 20;
+  }
+
+  .crystal {
+    opacity: 50%;
+    left: 55%;
+    top: 6%;
+    width: 42%;
+    height: 39%;
+    z-index: 2;
+  }
+
+  .studiegrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33% 33% 33%;
+    position: relative;
+    z-index: 3;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .studiestartoverskrift1 {
+    position: relative;
+    z-index: 10;
+    margin-top: -44%;
+  }
+
+  .studiestartoverskrift2 {
+    grid-column: 1;
+    grid-row: 2;
+    position: relative;
+    z-index: 7;
+    margin-right: -187%;
+    margin-top: 120%;
+  }
+
+  .studiestarttxt {
+    grid-column: 1;
+    grid-row: 3;
+    position: relative;
+    margin-right: -316%;
+    margin-top: 39%;
+  }
+
+  .studiegallery {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .studieimgbox {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    position: relative;
+    top: 16%;
+    margin-left: 7%;
+    padding-bottom: 5%;
+  }
+
+  .studie1 {
+    grid-column: 1;
+    grid-row: 1;
+    background: url(billeder/studiestart1.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  .studie2 {
+    grid-column: 1;
+    grid-row: 2;
+    background: url(billeder/studiestart2.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  .studie3 {
+    grid-column: 1;
+    grid-row: 3;
+    background: url(billeder/studiestart3.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  .studie4 {
+    grid-column: 1;
+    grid-row: 4;
+    background: url(billeder/studiestart4.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  #emneknap {
+    top: 9%;
+    left: -23%;
+    height: 1.7%;
+  }
+  .emnegrid1 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    position: relative;
+    z-index: 20;
+  }
+
+  .emnegrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33% 33% 33%;
+    position: relative;
+    z-index: 3;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .emneoverskrift1 {
+    position: relative;
+    z-index: 10;
+    margin-top: -44%;
+  }
+
+  .emneoverskrift2 {
+    grid-column: 1;
+    grid-row: 2;
+    position: relative;
+    z-index: 7;
+    margin-right: -187%;
+    margin-top: 120%;
+  }
+
+  .emnetxt {
+    grid-column: 1;
+    grid-row: 3;
+    position: relative;
+    margin-right: -316%;
+    margin-top: 39%;
+  }
+
+  .emneegallery {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .emneimgbox {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    position: relative;
+    top: 16%;
+    margin-left: 7%;
+    padding-bottom: 5%;
+  }
+
+  .emne1 {
+    grid-column: 1;
+    grid-row: 1;
+    background: url(billeder/emnesite1.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  .emne2 {
+    grid-column: 1;
+    grid-row: 2;
+    background: url(billeder/emnesite2.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  .emne3 {
+    grid-column: 1;
+    grid-row: 3;
+    background: url(billeder/emnesite3.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
+
+  .emne4 {
+    grid-column: 1;
+    grid-row: 4;
+    background: url(billeder/emnesite4.png);
+    border-radius: 0%;
+    width: 322px;
+    height: 218px;
+    background-size: cover;
+  }
 }
 
-@media (min-width: 920px) {
+@media (min-width: 600px) {
+  .studiegallery {
+    width: 22%;
+    height: 57vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 53%;
+    margin-top: 7%;
+    flex-direction: column;
+  }
+
+  .studieimg:nth-child(2) {
+    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/studiestart2.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .studieimg:nth-child(3) {
+    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/studiestart3.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .studieimg:nth-child(4) {
+    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/studiestart4.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .emnegallery {
+    width: 22%;
+    height: 57vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 53%;
+    margin-top: 7%;
+    flex-direction: column;
+  }
+
+  .emneimg:nth-child(2) {
+    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/emnesite2.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .emneimg:nth-child(3) {
+    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/emnesite3.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .emneimg:nth-child(4) {
+    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/emnesite4.png);
+    background-size: cover;
+    background-position: center;
+  }
 }
