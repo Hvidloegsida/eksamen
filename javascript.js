@@ -129,3 +129,26 @@
     dropDown.classList.remove("border");
   });
 })();
+
+function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+
+  // Check the screen size using a media query
+  var mediaQuery = window.matchMedia("(min-width: 500px)");
+
+  // Check if the screen size is over 500px
+  if (mediaQuery.matches) {
+    // Show the container element (hidden with CSS)
+    expandImg.parentElement.style.display = "block";
+  } else {
+    // Hide the container element
+    expandImg.parentElement.style.display = "none";
+  }
+}

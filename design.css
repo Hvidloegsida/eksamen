@@ -223,11 +223,6 @@ nav .drop-down6.closed {
   padding: 10px;
 }
 
-.border {
-  border-style: solid;
-  color: #ea667f;
-}
-
 /*FINISHED*/
 
 body {
@@ -762,49 +757,64 @@ footer {
 
 /*EMNESITE*/
 
-.emneimgbox {
+.row {
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: center; /* Center aligns the mini gallery horizontally */
+  margin-left: 16%;
+  margin-right: 16%;
 }
 
-.emneimg {
-  width: 62px;
-  height: 63px;
-  margin-left: 85%;
-  margin: 3px;
-  border-radius: 50px;
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/emnesite1.png);
-  background-size: cover;
-  background-position: center;
-  transition: width 0.5s ease-in-out;
-  flex-direction: column;
+.column {
+  float: left;
+  width: 15%;
+  padding: 10px;
+  overflow: hidden;
 }
 
-.emne1:hover {
-  background: url(billeder/emnesite1.png);
-  background-size: cover;
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.5;
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-.emne2:hover {
-  background: url(billeder/emnesite2.png);
-  background-size: cover;
+.column img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.emne3:hover {
-  background: url(billeder/emnesite3.png);
-  background-size: cover;
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: fixed;
+  display: none;
+  top: 32%;
+  left: 31%;
+  width: 35%;
 }
 
-.emne4:hover {
-  background: url(billeder/emnesite4.png);
-  background-size: cover;
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
 }
-.emneimg:hover {
-  width: 404px;
-  height: 275px;
-  margin-right: 78%;
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
   cursor: pointer;
 }
 
@@ -812,9 +822,10 @@ footer {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 25% 25% 25% 25%;
-  margin-top: -32%;
+  margin-top: -4%;
   margin-left: 5%;
   margin-right: 73%;
+  position: relative;
 }
 
 .emneoverskrift1 {
@@ -1316,7 +1327,7 @@ footer {
 @media (max-width: 1050px) {
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   nav {
     padding: 0 40px 0 50px;
     z-index: 4;
@@ -1329,7 +1340,7 @@ footer {
   nav .menu-btn i {
     display: block;
     z-index: 4;
-    margin-left: 1567%;
+    margin-left: 1389%;
   }
 
   #click:checked ~ .menu-btn i:before {
@@ -1464,6 +1475,7 @@ footer {
     width: 92%;
     position: fixed;
     top: 84%;
+    height: 13%;
   }
 
   .indexlogo {
@@ -1522,7 +1534,7 @@ footer {
   .kontakt {
     left: 2%;
     word-spacing: 86%;
-    top: 49%;
+    top: 37%;
   }
 
   .copyright {
@@ -1803,6 +1815,7 @@ footer {
     z-index: 3;
     grid-column: 1;
     grid-row: 1;
+    margin-top: -30%;
   }
 
   .emneoverskrift1 {
@@ -1816,7 +1829,7 @@ footer {
     grid-row: 2;
     position: relative;
     z-index: 7;
-    margin-right: -187%;
+    margin-right: -281%;
     margin-top: 120%;
   }
 
@@ -1838,14 +1851,19 @@ footer {
     grid-template-rows: 25% 25% 25% 25%;
     position: relative;
     top: 16%;
-    margin-left: 7%;
+    margin-left: 3%;
     padding-bottom: 5%;
+  }
+  .column img {
+    opacity: 1;
+  }
+  .container {
+    display: none;
   }
 
   .emne1 {
     grid-column: 1;
     grid-row: 1;
-    background: url(billeder/emnesite1.png);
     border-radius: 0%;
     width: 322px;
     height: 218px;
@@ -1855,7 +1873,6 @@ footer {
   .emne2 {
     grid-column: 1;
     grid-row: 2;
-    background: url(billeder/emnesite2.png);
     border-radius: 0%;
     width: 322px;
     height: 218px;
@@ -1865,7 +1882,6 @@ footer {
   .emne3 {
     grid-column: 1;
     grid-row: 3;
-    background: url(billeder/emnesite3.png);
     border-radius: 0%;
     width: 322px;
     height: 218px;
@@ -1875,7 +1891,6 @@ footer {
   .emne4 {
     grid-column: 1;
     grid-row: 4;
-    background: url(billeder/emnesite4.png);
     border-radius: 0%;
     width: 322px;
     height: 218px;
@@ -2530,5 +2545,10 @@ footer {
     background: linear-gradient(#ea667e53, #ea667e53), url(billeder/virksomhed4.png);
     background-size: cover;
     background-position: center;
+  }
+
+  .border {
+    border-style: solid;
+    color: #ea667f;
   }
 }
