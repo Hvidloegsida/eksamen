@@ -16,21 +16,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
 }
 
-/** drop down menu*/
+/*RAMME FOR ALLE SIDDERNE*/
+body {
+  background-color: #ffe9e0;
+}
+
+/*NAV BAR*/
+/*DROP DOWN NAVBAR*/
 
 nav .drop-down1 {
   height: 90px; /* 172px = (38 (li) + 5 (li border)) * 4 (number of li) */
   width: 139.5px;
   margin-left: 23%;
-  list-style: none;
   overflow: hidden; /* When ul height is reduced, ensure overflowing li are not shown */
-  overflow: hidden;
-  padding: 0;
-  text-align: center;
   position: absolute;
   margin-top: 3.5%;
   z-index: 1000;
@@ -47,26 +47,19 @@ nav .drop-down1.closed {
 nav .drop-down1 li a {
   display: block;
   color: #6e3e03;
-  text-decoration: none;
   padding: 10px; /* Larger touch target area */
 }
 
 nav .drop-down1 li:first-child a:after {
   content: "\25BC";
   float: right;
-  margin-left: -1px; /* Excessive -margin to bring link text back to center */
-  margin-right: 5px;
 }
 
 nav .drop-down2 {
   height: 130px; /* 172px = (38 (li) + 5 (li border)) * 4 (number of li) */
   width: 210.5px;
   margin-left: 37%;
-  list-style: none;
   overflow: hidden; /* When ul height is reduced, ensure overflowing li are not shown */
-  overflow: hidden;
-  padding: 0;
-  text-align: center;
   position: absolute;
   margin-top: 7%;
   z-index: 1000;
@@ -90,8 +83,6 @@ nav .drop-down2 li a {
 nav .drop-down2 li:first-child a:after {
   content: "\25BC";
   float: right;
-  margin-left: -1px; /* Excessive -margin to bring link text back to center */
-  margin-right: 5px;
 }
 
 nav .drop-down2:hover {
@@ -114,19 +105,13 @@ nav .drop-down3 li a {
 nav .drop-down3 li:first-child a:after {
   content: "\25BC";
   float: right;
-  margin-left: -1px; /* Excessive -margin to bring link text back to center */
-  margin-right: 5px;
 }
 
 nav .drop-down3 {
   height: 130px; /* 172px = (38 (li) + 5 (li border)) * 4 (number of li) */
   width: 125.5px;
   margin-left: 47%;
-  list-style: none;
   overflow: hidden; /* When ul height is reduced, ensure overflowing li are not shown */
-  overflow: hidden;
-  padding: 0;
-  text-align: center;
   position: absolute;
   margin-top: 7%;
   z-index: 1000;
@@ -141,11 +126,7 @@ nav .drop-down4 {
   height: 130px; /* 172px = (38 (li) + 5 (li border)) * 4 (number of li) */
   width: 137.5px;
   margin-left: 79%;
-  list-style: none;
   overflow: hidden; /* When ul height is reduced, ensure overflowing li are not shown */
-  overflow: hidden;
-  padding: 0;
-  text-align: center;
   position: absolute;
   margin-top: 0%;
   z-index: 1000;
@@ -155,8 +136,6 @@ nav .drop-down4 {
 nav .drop-down4.closed {
   margin-left: 54%;
   height: 42px;
-  margin-top: 0%;
-  padding: 3px;
   padding-top: 0.7%;
   padding-right: 2.5%;
   padding-left: 0%;
@@ -167,11 +146,7 @@ nav .drop-down5 {
   height: 130px; /* 172px = (38 (li) + 5 (li border)) * 4 (number of li) */
   width: 137.5px;
   margin-left: 67%;
-  list-style: none;
   overflow: hidden; /* When ul height is reduced, ensure overflowing li are not shown */
-  overflow: hidden;
-  padding: 0;
-  text-align: center;
   position: absolute;
   margin-top: 7%;
   z-index: 1000;
@@ -195,8 +170,6 @@ nav .drop-down5 li a {
 nav .drop-down5 li:first-child a:after {
   content: "\25BC";
   float: right;
-  margin-left: -1px; /* Excessive -margin to bring link text back to center */
-  margin-right: 5px;
 }
 
 nav .drop-down5:hover {
@@ -206,11 +179,7 @@ nav .drop-down6 {
   height: 130px; /* 172px = (38 (li) + 5 (li border)) * 4 (number of li) */
   width: 137.5px;
   margin-left: 79%;
-  list-style: none;
   overflow: hidden; /* When ul height is reduced, ensure overflowing li are not shown */
-  overflow: hidden;
-  padding: 0;
-  text-align: center;
   position: absolute;
   margin-top: 0%;
   z-index: 1000;
@@ -219,15 +188,14 @@ nav .drop-down6 {
 nav .drop-down6.closed {
   margin-left: 77%;
   height: 42px;
-  margin-top: 0%;
   padding: 10px;
 }
 
-/*FINISHED*/
-
-body {
-  background-color: #ffe9e0;
+#tryk {
+  color: #ea667f;
 }
+
+/*RESTEN AF NORMAL NAVBAR*/
 
 nav {
   display: flex;
@@ -237,24 +205,11 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0 50px 0 100px;
-  flex-wrap: wrap;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   margin-left: 3%;
   margin-top: 1%;
   position: relative; /* Create a new stacking context */
   z-index: 1000; /* Increase the z-index value of the parent element */
-}
-
-.logopic {
-  background-image: url(billeder/idalogo.png);
-  width: 128px;
-  height: 65px;
-  aspect-ratio: 2/1;
-  background-size: cover;
-  position: absolute;
-  top: 1.5%;
-  left: 3%;
-  z-index: 1001;
 }
 
 nav ul {
@@ -271,9 +226,7 @@ nav ul li a {
   color: #6e3e03;
   text-decoration: none;
   font-size: 18px;
-  font-weight: 500;
   padding: 8px 15px;
-  border-radius: 5px;
   letter-spacing: 1px;
   font-family: "al_nevrada_personuploadedfile";
   white-space: nowrap;
@@ -293,6 +246,16 @@ nav .menu-btn i {
 
 input[type="checkbox"] {
   display: none;
+}
+.logopic {
+  background-image: url(billeder/idalogo.png);
+  width: 128px;
+  aspect-ratio: 2/1;
+  background-size: cover;
+  position: absolute;
+  top: 1.5%;
+  left: 3%;
+  z-index: 1001;
 }
 
 /* ANDET PÅ SIDERNE  */
@@ -320,6 +283,8 @@ input[type="checkbox"] {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   overflow-y: scroll;
 }
+
+/*FOOTER*/
 
 footer {
   background-color: #fef5f0;
@@ -405,48 +370,12 @@ footer {
   left: 63%;
 }
 
-/* ::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #ea667f;
-}
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-} */
-
-/**INDHOLD PÅ INDEX SIDEN**/
-
-.indexlogo {
-  background-image: url(billeder/idalogo.png);
-  background-size: cover;
-  width: 41%;
-  height: 70%;
-  margin-top: 7%;
-  margin-left: 19%;
-}
-.indexportfolio {
-  font-family: "al_nevrada_personuploadedfile";
-  color: #6e3e03;
-  font-size: 265%;
-  margin-top: -19%;
-  margin-left: 46%;
-}
-
-.indexcitat {
-  font-family: "playfair_displayregular";
-  color: #6e3e03;
-  font-size: 116%;
-  margin-top: 41.5%;
-  margin-left: 11%;
-}
+/*KNAP*/
 
 .knap {
   width: 10%;
   height: 5%;
   margin-top: -6%;
-  margin-left: 0%;
 }
 .knapbbypink {
   background-color: #ffe9e0;
@@ -457,8 +386,20 @@ footer {
   left: 347%;
   z-index: 500;
   position: relative;
+  cursor: pointer;
+  transition: 0.5s ease-in;
 }
 
+/*knap på indexsiden*/
+
+/*Knap på alle andre sider*/
+.knaptxt {
+  font-family: "playfair_displayregular";
+  color: #6e3e03;
+  font-size: 160%;
+  text-align: center;
+  padding-top: 5%;
+}
 #knaptxt {
   font-family: "al_nevrada_personuploadedfile";
   color: #6e3e03;
@@ -479,18 +420,9 @@ footer {
   position: relative;
 }
 
-/*forsøg på animation af knap*/
-.knapbbypink {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s ease-in;
-}
-
 .knapbbypink span {
   cursor: pointer;
   display: inline-block;
-  position: relative;
   transition: 0.5s ease-in;
 }
 
@@ -508,17 +440,97 @@ footer {
   margin-top: -1.1%;
 }
 
+/*SLUT FOR RAMMERNE PÅ ALLE SIDERNE*/
+
+/*GALLERY*/
+
+.row {
+  display: flex;
+  justify-content: center; /* Center aligns the mini gallery horizontally */
+  margin-left: 16%;
+  margin-right: 16%;
+}
+
+.column {
+  float: left;
+  width: 15%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.5;
+  cursor: pointer;
+  width: 100%;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.column img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+.row:after {
+  content: "";
+  clear: both;
+}
+
+.container {
+  position: fixed;
+  top: 32%;
+  left: 31%;
+  width: 35%;
+}
+
+/*text der ikke skal synlig*/
+#imgtext {
+  color: transparent;
+}
+
+/* knap skal ikke være synlig */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: transparent;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/**INDHOLD PÅ INDEX SIDEN**/
+
+.indexlogo {
+  background-image: url(billeder/idalogo.png);
+  background-size: cover;
+  width: 43%;
+  height: 70%;
+  margin-top: 7%;
+  margin-left: 19%;
+}
+.indexportfolio {
+  font-family: "al_nevrada_personuploadedfile";
+  color: #6e3e03;
+  font-size: 265%;
+  margin-top: -19%;
+  margin-left: 46%;
+}
+
+.indexcitat {
+  font-family: "playfair_displayregular";
+  color: #6e3e03;
+  font-size: 116%;
+  margin-top: 12.5%;
+  margin-left: 11%;
+}
+
 /*OMG MIG SIDE*/
 
 .ommig_grid {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 33% 33% 33%;
 }
 
 .ommig_overskrift {
   grid-column: 2;
-  grid-row: 1;
   color: #ea667f;
   font-family: "al_nevrada_personuploadedfile";
   margin-top: 11%;
@@ -527,7 +539,6 @@ footer {
 
 .ommig_txt {
   grid-column: 2;
-  grid-row: 2;
   color: #6e3e03;
   font-family: "playfair_displayregular";
   margin-top: 1%;
@@ -536,9 +547,7 @@ footer {
 }
 
 .ommig_pic {
-  grid-column: 1;
-  grid-row: 1/4;
-  background-image: url(billeder/mig.PNG);
+  background-image: url(billeder/mig.webp);
   background-size: cover;
   width: 23%;
   height: 68%;
@@ -553,20 +562,11 @@ footer {
   left: -2%;
 }
 
-.knaptxt {
-  font-family: "playfair_displayregular";
-  color: #6e3e03;
-  font-size: 160%;
-  text-align: center;
-  padding-top: 5%;
-}
-
 /*CV SIDE */
 
 .cv_grid {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 14% 14% 14% 14% 14% 14% 14%;
+  grid-template-columns: 50%;
   margin-top: 6%;
   margin-left: -35%;
 }
@@ -593,9 +593,7 @@ footer {
   margin-left: -78%;
 }
 .cv_pic {
-  grid-column: 1;
-  grid-row: 1/4;
-  background-image: url(billeder/mig.PNG);
+  background-image: url(billeder/mig.webp);
   background-size: cover;
   width: 23%;
   height: 68%;
@@ -607,36 +605,6 @@ footer {
   margin-left: 101%;
   margin-right: -48%;
   margin-top: 6%;
-}
-
-.cvo1 {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.cv1 {
-  grid-column: 2;
-  grid-row: 3;
-}
-
-.cvo2 {
-  grid-column: 2;
-  grid-row: 4;
-}
-
-.cv2 {
-  grid-column: 2;
-  grid-row: 5;
-}
-
-.cvo3 {
-  grid-column: 2;
-  grid-row: 6;
-}
-
-.cv3 {
-  grid-column: 2;
-  grid-row: 7;
 }
 
 /*WEB*/
@@ -672,63 +640,14 @@ footer {
   left: 43%;
 }
 /*STUDIESTARTSPRØVE*/
-.studieimgbox {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.studieimg {
-  width: 62px;
-  height: 63px;
-  margin-left: 85%;
-  margin: 3px;
-  border-radius: 50px;
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/studiestart1.png);
-  background-size: cover;
-  background-position: center;
-  transition: width 0.5s ease-in-out;
-  flex-direction: column;
-}
-.studie1:hover {
-  background: url(billeder/studiestart1.png);
-  background-size: cover;
-}
-
-.studie2:hover {
-  background: url(billeder/studiestart2.png);
-  background-size: cover;
-}
-
-.studie3:hover {
-  background: url(billeder/studiestart3.png);
-  background-size: cover;
-}
-
-.studie4:hover {
-  background: url(billeder/studiestart4.png);
-  background-size: cover;
-}
-.studieimg:hover {
-  width: 404px;
-  height: 275px;
-  margin-right: 78%;
-  cursor: pointer;
-}
 
 .studiegrid {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 25% 25% 25% 25%;
-  margin-top: -32%;
+  margin-top: -6%;
   margin-left: 5%;
   margin-right: 73%;
 }
 
 .studiestartoverskrift1 {
-  grid-column: 1;
-  grid-row: 1;
   color: #ea667f;
   font-family: "al_nevrada_personuploadedfile";
   margin-bottom: 11%;
@@ -737,15 +656,11 @@ footer {
 }
 
 .studiestartoverskrift2 {
-  grid-column: 1;
-  grid-row: 2;
   color: #ea667f;
   font-family: "al_nevrada_personuploadedfile";
 }
 
 .studiestarttxt {
-  grid-column: 1;
-  grid-row: 3;
   color: #6e3e03;
   font-family: "playfair_displayregular";
 }
@@ -757,72 +672,8 @@ footer {
 
 /*EMNESITE*/
 
-.row {
-  display: flex;
-  justify-content: center; /* Center aligns the mini gallery horizontally */
-  margin-left: 16%;
-  margin-right: 16%;
-}
-
-.column {
-  float: left;
-  width: 15%;
-  padding: 10px;
-  overflow: hidden;
-}
-
-/* Style the images inside the grid */
-.column img {
-  opacity: 0.5;
-  cursor: pointer;
-  width: 100%;
-  height: auto;
-  transition: transform 0.5s ease, opacity 0.5s ease;
-}
-
-.column img:hover {
-  transform: scale(1.1);
-  opacity: 1;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* The expanding image container (positioning is needed to position the close button and the text) */
-.container {
-  position: fixed;
-  display: none;
-  top: 32%;
-  left: 31%;
-  width: 35%;
-}
-
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
-}
-
-/* Closable button inside the image */
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-}
-
 .emnegrid {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 25% 25% 25% 25%;
-  margin-top: -4%;
+  margin-top: -6%;
   margin-left: 5%;
   margin-right: 73%;
   position: relative;
@@ -886,60 +737,13 @@ footer {
 
 /*SKETCH*/
 
-.sketchimgbox {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.sketchimg {
-  width: 62px;
-  height: 63px;
-  margin-left: 85%;
-  margin: 3px;
-  border-radius: 50px;
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/sketch1.png);
-  background-size: cover;
-  background-position: center;
-  transition: width 0.5s ease-in-out;
-  flex-direction: column;
-}
-
-.sketch1:hover {
-  background: url(billeder/sketch1.png);
-  background-size: cover;
-}
-
-.sketch2:hover {
-  background: url(billeder/sketch2.png);
-  background-size: cover;
-}
-
-.sketch3:hover {
-  background: url(billeder/sketch3.png);
-  background-size: cover;
-}
-
-.sketchimg:hover {
-  width: 404px;
-  height: 275px;
-  margin-right: 78%;
-  cursor: pointer;
-}
-
 .sketchgrid {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 25% 25% 25% 25%;
-  margin-top: -29%;
+  margin-top: -6%;
   margin-left: 5%;
   margin-right: 73%;
 }
 
 .sketchoverskrift1 {
-  grid-column: 1;
-  grid-row: 1;
   color: #ea667f;
   font-family: "al_nevrada_personuploadedfile";
   margin-bottom: 11%;
@@ -948,15 +752,11 @@ footer {
 }
 
 .sketchoverskrift2 {
-  grid-column: 1;
-  grid-row: 2;
   color: #ea667f;
   font-family: "al_nevrada_personuploadedfile";
 }
 
 .sketchtxt {
-  grid-column: 1;
-  grid-row: 3;
   color: #6e3e03;
   font-family: "playfair_displayregular";
 }
@@ -968,54 +768,13 @@ footer {
 
 /*PROTOTYPE*/
 
-.protoimgbox {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.protoimg {
-  width: 62px;
-  height: 63px;
-  margin-left: 85%;
-  margin: 3px;
-  border-radius: 50px;
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/proto1.png);
-  background-size: cover;
-  background-position: center;
-  transition: width 0.5s ease-in-out;
-  flex-direction: column;
-}
-.proto1:hover {
-  background: url(billeder/proto1.png);
-  background-size: cover;
-}
-
-.proto2:hover {
-  background: url(billeder/proto2.png);
-  background-size: cover;
-}
-
-.protoimg:hover {
-  width: 404px;
-  height: 275px;
-  margin-right: 78%;
-  cursor: pointer;
-}
-
 .protogrid {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 25% 25% 25% 25%;
-  margin-top: -29%;
+  margin-top: -6%;
   margin-left: 5%;
   margin-right: 73%;
 }
 
 .protooverskrift1 {
-  grid-column: 1;
-  grid-row: 1;
   color: #ea667f;
   font-family: "al_nevrada_personuploadedfile";
   margin-bottom: 11%;
@@ -1024,15 +783,11 @@ footer {
 }
 
 .protooverskrift2 {
-  grid-column: 1;
-  grid-row: 2;
   color: #ea667f;
   font-family: "al_nevrada_personuploadedfile";
 }
 
 .prototxt {
-  grid-column: 1;
-  grid-row: 3;
   color: #6e3e03;
   font-family: "playfair_displayregular";
 }
@@ -1043,63 +798,13 @@ footer {
 }
 /*ANIMATION*/
 
-.aniimgbox {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.aniimg {
-  width: 62px;
-  height: 63px;
-  margin-left: 85%;
-  margin: 3px;
-  border-radius: 50px;
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/ani1.png);
-  background-size: cover;
-  background-position: center;
-  transition: width 0.5s ease-in-out;
-  flex-direction: column;
-}
-.ani1:hover {
-  background: url(billeder/ani1.png);
-  background-size: cover;
-}
-
-.ani2:hover {
-  background: url(billeder/ani2.png);
-  background-size: cover;
-}
-
-.ani3:hover {
-  background: url(billeder/ani3.PNG);
-  background-size: cover;
-}
-
-.ani4:hover {
-  background: url(billeder/ani4.png);
-  background-size: cover;
-}
-.aniimg:hover {
-  width: 404px;
-  height: 275px;
-  margin-right: 78%;
-  cursor: pointer;
-}
-
 .anigrid {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 25% 25% 25% 25%;
-  margin-top: -32%;
+  margin-top: -4%;
   margin-left: 5%;
   margin-right: 73%;
 }
 
 .anioverskrift1 {
-  grid-column: 1;
-  grid-row: 1;
   color: #ea667f;
   font-family: "al_nevrada_personuploadedfile";
   margin-bottom: 11%;
@@ -1108,15 +813,11 @@ footer {
 }
 
 .anioverskrift2 {
-  grid-column: 1;
-  grid-row: 2;
   color: #ea667f;
   font-family: "al_nevrada_personuploadedfile";
 }
 
 .anitxt {
-  grid-column: 1;
-  grid-row: 3;
   color: #6e3e03;
   font-family: "playfair_displayregular";
 }
@@ -1155,64 +856,14 @@ footer {
 }
 
 /*PASSION*/
-.passionimgbox {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.passionimg {
-  width: 62px;
-  height: 63px;
-  margin-left: 85%;
-  margin: 3px;
-  border-radius: 50px;
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/passion1.png);
-  background-size: cover;
-  background-position: center;
-  transition: width 0.5s ease-in-out;
-  flex-direction: column;
-}
-
-.passion1:hover {
-  background: url(billeder/passion1.png);
-  background-size: cover;
-}
-
-.passion2:hover {
-  background: url(billeder/passion2.png);
-  background-size: cover;
-}
-
-.passion3:hover {
-  background: url(billeder/passion3.png);
-  background-size: cover;
-}
-
-.passion4:hover {
-  background: url(billeder/passion4.png);
-  background-size: cover;
-}
-.passionimg:hover {
-  width: 404px;
-  height: 275px;
-  margin-right: 78%;
-  cursor: pointer;
-}
 
 .passiongrid {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 25% 25% 25% 25%;
-  margin-top: -32%;
+  margin-top: -6%;
   margin-left: 5%;
   margin-right: 73%;
 }
 
 .passionoverskrift1 {
-  grid-column: 1;
-  grid-row: 1;
   color: #ea667f;
   font-family: "al_nevrada_personuploadedfile";
   margin-bottom: 11%;
@@ -1221,15 +872,11 @@ footer {
 }
 
 .passionoverskrift2 {
-  grid-column: 1;
-  grid-row: 2;
   color: #ea667f;
   font-family: "al_nevrada_personuploadedfile";
 }
 
 .passiontxt {
-  grid-column: 1;
-  grid-row: 3;
   color: #6e3e03;
   font-family: "playfair_displayregular";
 }
@@ -1240,64 +887,14 @@ footer {
 }
 
 /*VIRSOMHED*/
-.virksomhedimgbox {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.virksomhedimg {
-  width: 62px;
-  height: 63px;
-  margin-left: 85%;
-  margin: 3px;
-  border-radius: 50px;
-  background: linear-gradient(#ea667e53, #ea667e53), url(billeder/virksomhed1.png);
-  background-size: cover;
-  background-position: center;
-  transition: width 0.5s ease-in-out;
-  flex-direction: column;
-}
-
-.virksomhed1:hover {
-  background: url(billeder/virksomhed1.png);
-  background-size: cover;
-}
-
-.virksomhed2:hover {
-  background: url(billeder/virksomhed2.png);
-  background-size: cover;
-}
-
-.virksomhed3:hover {
-  background: url(billeder/virksomhed3.png);
-  background-size: cover;
-}
-
-.virksomhed4:hover {
-  background: url(billeder/virksomhed4.png);
-  background-size: cover;
-}
-.virksomhedimg:hover {
-  width: 404px;
-  height: 275px;
-  margin-right: 78%;
-  cursor: pointer;
-}
 
 .virksomhedgrid {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 25% 25% 25% 25%;
-  margin-top: -32%;
+  margin-top: -6%;
   margin-left: 5%;
   margin-right: 73%;
 }
 
 .virksomhedoverskrift1 {
-  grid-column: 1;
-  grid-row: 1;
   color: #ea667f;
   font-family: "al_nevrada_personuploadedfile";
   margin-bottom: 11%;
@@ -1306,8 +903,6 @@ footer {
 }
 
 .virksomhedoverskrift2 {
-  grid-column: 1;
-  grid-row: 2;
   color: #ea667f;
   font-family: "al_nevrada_personuploadedfile";
 }
@@ -1324,13 +919,41 @@ footer {
   left: -33%;
 }
 
-@media (max-width: 1050px) {
+/*PROCESS*/
+
+.processgrid {
+  margin-top: -6%;
+  margin-left: 5%;
+  margin-right: 73%;
+}
+
+.processoverskrift1 {
+  color: #ea667f;
+  font-family: "al_nevrada_personuploadedfile";
+  margin-bottom: 11%;
+  margin-left: -15%;
+  margin-top: -10%;
+}
+
+.processoverskrift2 {
+  color: #ea667f;
+  font-family: "al_nevrada_personuploadedfile";
+}
+
+.processtxt {
+  color: #6e3e03;
+  font-family: "playfair_displayregular";
+}
+#processknap {
+  position: absolute;
+  top: 105%;
+  left: -33%;
 }
 
 @media (max-width: 500px) {
+  /*NAV BAR*/
   nav {
     padding: 0 40px 0 50px;
-    z-index: 4;
     position: fixed;
     margin-top: -4%;
     width: 92%;
@@ -1339,7 +962,6 @@ footer {
   }
   nav .menu-btn i {
     display: block;
-    z-index: 4;
     margin-left: 1389%;
   }
 
@@ -1357,7 +979,6 @@ footer {
     background: #fef5f0;
     height: 100vh;
     width: 94%;
-    text-align: center;
     display: block;
     transition: all 0.3s ease;
     z-index: 4;
@@ -1366,7 +987,7 @@ footer {
 
   #click:checked ~ ul {
     left: 0;
-    margin-left: -1%;
+    margin-left: -0.5%;
     padding-right: 63%;
     padding-left: 38%;
   }
@@ -1374,7 +995,6 @@ footer {
   nav ul li {
     width: 100%;
     margin: 40px 0;
-    z-index: 4;
     margin-top: 1%;
   }
 
@@ -1458,12 +1078,12 @@ footer {
     content: none;
   }
 
+  /*RAMME FOR ALLE SIDDERNE*/
+
   .box {
     width: 92%;
     top: -4%;
     position: fixed;
-    z-index: 1;
-    padding-bottom: 20%;
     height: 75%;
     padding-top: 41%;
     margin-top: 28%;
@@ -1478,24 +1098,15 @@ footer {
     height: 13%;
   }
 
-  .indexlogo {
-    position: absolute;
-    z-index: 3;
-    top: 29%;
-    width: 93%;
-    height: 31%;
-    left: -23%;
+  .crystal {
+    opacity: 50%;
+    left: 55%;
+    top: 6%;
+    width: 42%;
+    height: 39%;
+    z-index: 2;
   }
-  .indexportfolio {
-    font-size: 177%;
-    margin-top: 15%;
-    margin-left: 5%;
-  }
-  .indexcitat {
-    margin-top: 39.5%;
-    margin-left: 6%;
-    margin-right: 31%;
-  }
+
   .knap {
     width: 29%;
     height: 3%;
@@ -1542,37 +1153,25 @@ footer {
     top: 79%;
   }
 
-  .ommig_grid {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 33% 10% 10%;
-    margin-top: 35%;
-  }
-  .ommig_pic {
-    grid-column: 1;
-    grid-row: 1;
-    position: static;
-    aspect-ratio: 2/3;
-    position: relative;
-    position: relative;
-    top: -96%;
-    z-index: 4;
-    width: 51%;
-    height: 73%;
-  }
-  .ommig_overskrift {
-    grid-column: 1;
-    grid-row: 2;
-    margin-top: -88%;
-    margin-left: 5%;
-  }
+  /*INDEX*/
 
-  .ommig_txt {
-    grid-column: 1;
-    grid-row: 3;
-    margin-top: -77%;
+  .indexlogo {
+    position: absolute;
+    z-index: 3;
+    top: 29%;
+    width: 93%;
+    height: 31%;
+    left: -23%;
+  }
+  .indexportfolio {
+    font-size: 177%;
+    margin-top: 15%;
     margin-left: 5%;
-    margin-right: 17%;
+  }
+  .indexcitat {
+    margin-top: 39.5%;
+    margin-left: 6%;
+    margin-right: 31%;
   }
 
   #indexknap {
@@ -1581,20 +1180,47 @@ footer {
     position: absolute;
     top: 66%;
   }
+  /*OM MIG*/
+
+  .ommig_grid {
+    grid-template-columns: 100%;
+    margin-top: 35%;
+    z-index: 6;
+    position: relative;
+  }
+  .ommig_pic {
+    grid-row: 1;
+    aspect-ratio: 2/3;
+    position: relative;
+    top: -96%;
+    z-index: 4;
+    width: 51%;
+    height: 73%;
+  }
+  .ommig_overskrift {
+    grid-column: 1;
+    margin-top: -88%;
+    margin-left: 5%;
+  }
+
+  .ommig_txt {
+    grid-column: 1;
+    margin-top: -77%;
+    margin-left: 5%;
+    margin-right: 17%;
+  }
 
   #ommigknap {
     left: -9%;
   }
 
+  /*CV*/
   .cv_grid {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 33% 33% 33;
     margin-top: 35%;
   }
   .cv_pic {
-    grid-column: 1;
-    grid-row: 1;
     aspect-ratio: 2/3;
     position: relative;
     top: -99%;
@@ -1613,11 +1239,12 @@ footer {
 
   .cv_txtsize {
     grid-column: 1;
-    grid-row: 3;
     margin-left: 31%;
     margin-right: 4%;
     margin-top: -47%;
   }
+
+  /*WEB*/
 
   .web_overskrift1 {
     top: 30%;
@@ -1641,6 +1268,8 @@ footer {
     left: -10%;
   }
 
+  /*UX*/
+
   .ux_overskrift1 {
     top: 30%;
     left: 27.5%;
@@ -1662,7 +1291,7 @@ footer {
     top: 78%;
     left: -10%;
   }
-
+  /*INDHOLD*/
   .indhold_overskrift1 {
     top: 30%;
     left: 18.5%;
@@ -1685,36 +1314,26 @@ footer {
     left: -10%;
   }
 
+  /*STUDIESTARTSPRØVE*/
   #studiestartknap {
-    top: 9%;
+    top: 17%;
     left: -23%;
     height: 1.7%;
   }
   .studiegrid1 {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
     position: relative;
     z-index: 20;
-  }
-
-  .crystal {
-    opacity: 50%;
-    left: 55%;
-    top: 6%;
-    width: 42%;
-    height: 39%;
-    z-index: 2;
+    margin-top: -30%;
   }
 
   .studiegrid {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 33% 33% 33%;
-    position: relative;
-    z-index: 3;
-    grid-column: 1;
     grid-row: 1;
+    margin-top: -2%;
   }
 
   .studiestartoverskrift1 {
@@ -1724,17 +1343,13 @@ footer {
   }
 
   .studiestartoverskrift2 {
-    grid-column: 1;
-    grid-row: 2;
     position: relative;
     z-index: 7;
-    margin-right: -187%;
+    margin-right: -281%;
     margin-top: 120%;
   }
 
   .studiestarttxt {
-    grid-column: 1;
-    grid-row: 3;
     position: relative;
     margin-right: -316%;
     margin-top: 39%;
@@ -1747,52 +1362,33 @@ footer {
   .studieimgbox {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25% 25% 25% 25%;
     position: relative;
     top: 16%;
-    margin-left: 7%;
+    margin-left: 3%;
     padding-bottom: 5%;
   }
 
   .studie1 {
-    grid-column: 1;
-    grid-row: 1;
-    background: url(billeder/studiestart1.png);
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
 
   .studie2 {
-    grid-column: 1;
-    grid-row: 2;
-    background: url(billeder/studiestart2.png);
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
 
   .studie3 {
-    grid-column: 1;
-    grid-row: 3;
-    background: url(billeder/studiestart3.png);
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
 
   .studie4 {
-    grid-column: 1;
-    grid-row: 4;
-    background: url(billeder/studiestart4.png);
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
+
+  /*EMNESITE*/
 
   #emneknap {
     top: 9%;
@@ -1811,9 +1407,6 @@ footer {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 33% 33% 33%;
-    position: relative;
-    z-index: 3;
-    grid-column: 1;
     grid-row: 1;
     margin-top: -30%;
   }
@@ -1825,8 +1418,6 @@ footer {
   }
 
   .emneoverskrift2 {
-    grid-column: 1;
-    grid-row: 2;
     position: relative;
     z-index: 7;
     margin-right: -281%;
@@ -1834,8 +1425,6 @@ footer {
   }
 
   .emnetxt {
-    grid-column: 1;
-    grid-row: 3;
     position: relative;
     margin-right: -316%;
     margin-top: 39%;
@@ -1862,45 +1451,31 @@ footer {
   }
 
   .emne1 {
-    grid-column: 1;
-    grid-row: 1;
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
 
   .emne2 {
-    grid-column: 1;
-    grid-row: 2;
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
 
   .emne3 {
-    grid-column: 1;
-    grid-row: 3;
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
 
   .emne4 {
-    grid-column: 1;
-    grid-row: 4;
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
 
+  /*SKETCH*/
+
   #sketchknap {
-    top: 9%;
+    top: 19%;
     left: -23%;
-    height: 2%;
+    height: 1.7%;
   }
   .sketchgrid1 {
     display: grid;
@@ -1908,37 +1483,31 @@ footer {
     grid-template-rows: 50% 50%;
     position: relative;
     z-index: 20;
+    margin-top: -28%;
   }
 
   .sketchgrid {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 33% 33% 33%;
-    position: relative;
-    z-index: 3;
-    grid-column: 1;
     grid-row: 1;
   }
 
   .sketchoverskrift1 {
-    position: relative;
     z-index: 10;
-    margin-top: -44%;
+    margin-top: -30%;
   }
 
   .sketchoverskrift2 {
     grid-column: 1;
-    grid-row: 2;
-    position: relative;
     z-index: 7;
-    margin-right: -187%;
+    margin-right: -281%;
     margin-top: 120%;
   }
 
   .sketchtxt {
     grid-column: 1;
     grid-row: 3;
-    position: relative;
     margin-right: -316%;
     margin-top: 39%;
   }
@@ -1950,85 +1519,60 @@ footer {
   .sketchimgbox {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25% 25% 25% 25%;
     position: relative;
     top: 16%;
-    margin-left: 7%;
+    margin-left: 3%;
     padding-bottom: 5%;
   }
 
   .sketch1 {
-    grid-column: 1;
-    grid-row: 1;
-    background: url(billeder/emnesite1.png);
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
 
   .sketch2 {
-    grid-column: 1;
-    grid-row: 2;
-    background: url(billeder/emnesite2.png);
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
 
   .sketch3 {
-    grid-column: 1;
-    grid-row: 3;
-    background: url(billeder/emnesite3.png);
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
 
+  /*PROTOTYPE*/
   #protoknap {
-    top: 14%;
+    top: 25%;
     left: -23%;
-    height: 3%;
+    height: 2.7%;
   }
   .protogrid1 {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
     position: relative;
     z-index: 20;
+    margin-top: -28%;
   }
 
   .protogrid {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 33% 33% 33%;
-    position: relative;
-    z-index: 3;
-    grid-column: 1;
     grid-row: 1;
   }
 
   .protooverskrift1 {
-    position: relative;
     z-index: 10;
-    margin-top: -44%;
+    margin-top: -32%;
   }
 
   .protooverskrift2 {
-    grid-column: 1;
-    grid-row: 2;
-    position: relative;
     z-index: 7;
-    margin-right: -187%;
+    margin-right: -281%;
     margin-top: 107%;
   }
 
   .prototxt {
-    grid-column: 1;
-    grid-row: 3;
-    position: relative;
     margin-right: -316%;
     margin-top: 50%;
   }
@@ -2040,75 +1584,54 @@ footer {
   .protoimgbox {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25% 25% 25% 25%;
     position: relative;
     top: 16%;
-    margin-left: 7%;
+    margin-left: 3%;
     padding-bottom: 5%;
   }
 
   .proto1 {
-    grid-column: 1;
-    grid-row: 1;
-    background: url(billeder/proto1.png);
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
 
   .proto2 {
-    grid-column: 1;
-    grid-row: 2;
-    background: url(billeder/proto2.png);
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
 
+  /*ANIMATION*/
+
   #aniknap {
-    top: 9%;
+    top: 16%;
     left: -23%;
     height: 1.7%;
   }
   .anigrid1 {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
     position: relative;
     z-index: 20;
+    margin-top: -28%;
   }
 
   .anigrid {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 33% 33% 33%;
-    position: relative;
-    z-index: 3;
-    grid-column: 1;
     grid-row: 1;
   }
 
   .anioverskrift1 {
-    position: relative;
-    z-index: 10;
     margin-top: -44%;
   }
 
   .anioverskrift2 {
-    grid-column: 1;
-    grid-row: 2;
-    position: relative;
-    z-index: 7;
-    margin-right: -187%;
+    margin-right: -281%;
     margin-top: 120%;
   }
 
   .anitxt {
-    grid-column: 1;
-    grid-row: 3;
-    position: relative;
     margin-right: -316%;
     margin-top: 64%;
   }
@@ -2123,49 +1646,31 @@ footer {
     grid-template-rows: 25% 25% 25% 25%;
     position: relative;
     top: 16%;
-    margin-left: 7%;
+    margin-left: 3%;
     padding-bottom: 5%;
   }
 
   .ani1 {
-    grid-column: 1;
-    grid-row: 1;
-    background: url(billeder/ani1.png);
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
 
   .ani2 {
-    grid-column: 1;
-    grid-row: 2;
-    background: url(billeder/ani2.png);
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
 
   .ani3 {
-    grid-column: 1;
-    grid-row: 3;
-    background: url(billeder/ani3.PNG);
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
 
   .ani4 {
-    grid-column: 1;
-    grid-row: 4;
-    background: url(billeder/ani4.png);
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
+
+  /*ANIMATION*/
 
   #passionknap {
     top: 9%;
@@ -2175,7 +1680,6 @@ footer {
   .passiongrid1 {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
     position: relative;
     z-index: 20;
   }
@@ -2184,31 +1688,20 @@ footer {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 33% 33% 33%;
-    position: relative;
-    z-index: 3;
-    grid-column: 1;
     grid-row: 1;
+    margin-top: -30%;
   }
 
   .passionoverskrift1 {
-    position: relative;
-    z-index: 10;
     margin-top: -44%;
   }
 
   .passionoverskrift2 {
-    grid-column: 1;
-    grid-row: 2;
-    position: relative;
-    z-index: 7;
-    margin-right: -187%;
+    margin-right: -281%;
     margin-top: 120%;
   }
 
   .passiontxt {
-    grid-column: 1;
-    grid-row: 3;
-    position: relative;
     margin-right: -316%;
     margin-top: 64%;
   }
@@ -2220,52 +1713,33 @@ footer {
   .passionimgbox {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25% 25% 25% 25%;
     position: relative;
     top: 16%;
-    margin-left: 7%;
+    margin-left: 3%;
     padding-bottom: 5%;
   }
 
   .passion1 {
-    grid-column: 1;
-    grid-row: 1;
-    background: url(billeder/passion1.png);
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
 
   .passion2 {
-    grid-column: 1;
-    grid-row: 2;
-    background: url(billeder/passion2.png);
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
 
   .passion3 {
-    grid-column: 1;
-    grid-row: 3;
-    background: url(billeder/passion3.png);
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
 
   .passion4 {
-    grid-column: 1;
-    grid-row: 4;
-    background: url(billeder/passion4.png);
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
+
+  /*VIRKSOMHED*/
 
   #virksomhedknap {
     top: 9%;
@@ -2275,7 +1749,6 @@ footer {
   .virksomhedgrid1 {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
     position: relative;
     z-index: 20;
   }
@@ -2284,31 +1757,21 @@ footer {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 33% 33% 33%;
-    position: relative;
-    z-index: 3;
-    grid-column: 1;
     grid-row: 1;
+    margin-top: -30%;
   }
 
   .virksomhedoverskrift1 {
-    position: relative;
-    z-index: 10;
     margin-top: -44%;
+    margin-right: -109%;
   }
 
   .virksomhedoverskrift2 {
-    grid-column: 1;
-    grid-row: 2;
-    position: relative;
-    z-index: 7;
-    margin-right: -187%;
+    margin-right: -281%;
     margin-top: 120%;
   }
 
   .virksomhedtxt {
-    grid-column: 1;
-    grid-row: 3;
-    position: relative;
     margin-right: -316%;
     margin-top: 64%;
   }
@@ -2320,233 +1783,97 @@ footer {
   .virksomhedimgbox {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25% 25% 25% 25%;
     position: relative;
     top: 16%;
-    margin-left: 7%;
+    margin-left: 3%;
     padding-bottom: 5%;
   }
 
   .virksomhed1 {
-    grid-column: 1;
-    grid-row: 1;
-    background: url(billeder/virksomhed1.png);
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
 
   .virksomhed2 {
-    grid-column: 1;
-    grid-row: 2;
-    background: url(billeder/virksomhed2.png);
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
 
   .virksomhed3 {
-    grid-column: 1;
-    grid-row: 3;
-    background: url(billeder/virksomhed3.png);
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
   }
 
   .virksomhed4 {
-    grid-column: 1;
-    grid-row: 4;
-    background: url(billeder/virksomhed4.png);
-    border-radius: 0%;
     width: 322px;
     height: 218px;
-    background-size: cover;
+  }
+  /*PROCESS*/
+  .processgrid1 {
+    display: grid;
+    grid-template-columns: 100%;
+    position: relative;
+    z-index: 20;
+  }
+
+  .processgrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33% 33% 33%;
+    grid-row: 1;
+    margin-top: -30%;
+  }
+
+  .processoverskrift1 {
+    margin-top: -44%;
+    margin-right: -109%;
+  }
+
+  .processoverskrift2 {
+    margin-right: -281%;
+    margin-top: 120%;
+  }
+
+  .processtxt {
+    margin-right: -316%;
+    margin-top: 64%;
+  }
+
+  .processgallery {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .processimgbox {
+    display: grid;
+    grid-template-columns: 100%;
+    position: relative;
+    top: 16%;
+    margin-left: 3%;
+    padding-bottom: 5%;
+  }
+
+  .process1 {
+    width: 322px;
+    height: 218px;
+  }
+
+  .process2 {
+    width: 322px;
+    height: 218px;
+  }
+
+  .process3 {
+    width: 322px;
+    height: 218px;
+  }
+
+  .process4 {
+    width: 322px;
+    height: 218px;
   }
 }
 
 @media (min-width: 600px) {
-  .studiegallery {
-    width: 22%;
-    height: 57vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 53%;
-    margin-top: 7%;
-    flex-direction: column;
-  }
-
-  .studieimg:nth-child(2) {
-    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/studiestart2.png);
-    background-size: cover;
-    background-position: center;
-  }
-  .studieimg:nth-child(3) {
-    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/studiestart3.png);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .studieimg:nth-child(4) {
-    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/studiestart4.png);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .emnegallery {
-    width: 22%;
-    height: 57vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 53%;
-    margin-top: 7%;
-    flex-direction: column;
-  }
-
-  .emneimg:nth-child(2) {
-    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/emnesite2.png);
-    background-size: cover;
-    background-position: center;
-  }
-  .emneimg:nth-child(3) {
-    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/emnesite3.png);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .emneimg:nth-child(4) {
-    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/emnesite4.png);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .sketchgallery {
-    width: 22%;
-    height: 57vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 53%;
-    margin-top: 4%;
-    flex-direction: column;
-  }
-  .sketchimg:nth-child(2) {
-    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/sketch2.png);
-    background-size: cover;
-    background-position: center;
-  }
-  .sketchimg:nth-child(3) {
-    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/sketch3.png);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .protogallery {
-    width: 22%;
-    height: 57vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 53%;
-    margin-top: 4%;
-    flex-direction: column;
-  }
-
-  .protoimg:nth-child(2) {
-    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/proto2.png);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .anigallery {
-    width: 22%;
-    height: 57vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 53%;
-    margin-top: 7%;
-    flex-direction: column;
-  }
-
-  .aniimg:nth-child(2) {
-    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/ani2.png);
-    background-size: cover;
-    background-position: center;
-  }
-  .aniimg:nth-child(3) {
-    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/ani3.PNG);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .aniimg:nth-child(4) {
-    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/ani4.png);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .passiongallery {
-    width: 22%;
-    height: 57vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 53%;
-    margin-top: 7%;
-    flex-direction: column;
-  }
-
-  .passionimg:nth-child(2) {
-    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/passion2.png);
-    background-size: cover;
-    background-position: center;
-  }
-  .passionimg:nth-child(3) {
-    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/passion3.png);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .passionimg:nth-child(4) {
-    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/passion4.png);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .virksomhedgallery {
-    width: 22%;
-    height: 57vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 53%;
-    margin-top: 7%;
-    flex-direction: column;
-  }
-
-  .virksomhedimg:nth-child(2) {
-    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/virksomhed2.png);
-    background-size: cover;
-    background-position: center;
-  }
-  .virksomhedimg:nth-child(3) {
-    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/virksomhed3.png);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .virksomhedimg:nth-child(4) {
-    background: linear-gradient(#ea667e53, #ea667e53), url(billeder/virksomhed4.png);
-    background-size: cover;
-    background-position: center;
-  }
-
   .border {
     border-style: solid;
     color: #ea667f;

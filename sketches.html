@@ -2,6 +2,10 @@
 <html lang="da">
 
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="billeder/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="billeder/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="billeder/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,7 +55,7 @@
 
         <ul class="active drop-down3 closed border">
             <li>
-                <a class="nav-button3 leavelink" href="ux.html">UX</a>
+                <a id="tryk" class="nav-button3 leavelink" href="ux.html">UX</a>
             </li>
 
             <li>
@@ -101,12 +105,24 @@
         <div class="crystal">
         </div>
         <div class="sketchgrid1">
-            <div class="sketchgallery">
-                <div class="sketchimgbox">
-                    <div class="sketchimg sketch1"></div>
-                    <div class="sketchimg sketch2"></div>
-                    <div class="sketchimg sketch3"></div>
+            <div class="row sketchimgbox">
+                <div class="column sketch1">
+                    <img src="billeder/sketch1.png" alt="pic" onclick="myFunction(this);">
                 </div>
+                <div class="column sketch2">
+                    <img src="billeder/sketch2.png" alt="pic" onclick="myFunction(this);">
+                </div>
+                <div class="column sketch3">
+                    <img src="billeder/sketch3.png" alt="pic" onclick="myFunction(this);">
+                </div>
+
+
+            </div>
+
+            <div class="container">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg" style="width:100%">
+                <div id="imgtext"></div>
             </div>
             <div class="sketchgrid">
                 <h1 class="sketchoverskrift1">Sketches</h1>

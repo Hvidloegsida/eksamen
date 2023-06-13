@@ -2,6 +2,10 @@
 <html lang="da">
 
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="billeder/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="billeder/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="billeder/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,7 +54,7 @@
 
         <ul class="active drop-down3 closed border">
             <li>
-                <a class="nav-button3 leavelink" href="ux.html">UX</a>
+                <a id="tryk" class="nav-button3 leavelink" href="ux.html">UX</a>
             </li>
 
             <li>
@@ -100,11 +104,21 @@
         <div class="crystal">
         </div>
         <div class="protogrid1">
-            <div class="protogallery">
-                <div class="protoimgbox">
-                    <div class="protoimg proto1"></div>
-                    <div class="protoimg proto2"></div>
+            <div class="row protoimgbox">
+                <div class="column proto1">
+                    <img src="billeder/proto1.png" alt="pic" onclick="myFunction(this);">
                 </div>
+                <div class="column proto2">
+                    <img src="billeder/proto2.png" alt="pic" onclick="myFunction(this);">
+                </div>
+
+
+            </div>
+
+            <div class="container">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg" style="width:100%">
+                <div id="imgtext"></div>
             </div>
 
 
@@ -118,7 +132,7 @@
                     som hjemmeside.
                 </p>
             </div>
-            <a href="cv.html">
+            <a href="https://xd.adobe.com/view/a2e84d28-e340-4827-bbdf-0fb0c41650dc-f7bb/">
                 <div id="protoknap" class="knap">
                     <div class="knapbbypink">
 

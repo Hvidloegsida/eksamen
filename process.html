@@ -2,35 +2,155 @@
 <html lang="en">
 
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="billeder/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="billeder/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="billeder/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=div, initial-scale=1.0">
-    <link rel="stylesheet" href="test.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="design.css">
+    <title>Process</title>
 </head>
 
 <body>
-    <div class="row">
-        <div class="column">
-            <img src="billeder/emnesite1.png" alt="pic" onclick="myFunction(this);">
+    <a href="index.html">
+        <div class="logopic"></div>
+    </a>
+    <nav>
+
+
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul class="active drop-down1 closed border">
+            <li>
+                <a class="nav-button1 leavelink" href="ommig.html">Om mig</a>
+            </li>
+
+            <li>
+                <a class="leavelink" href="cv.html">CV</a>
+            </li>
+        </ul>
+
+        <ul class="active drop-down2 closed border">
+            <li>
+                <a class="nav-button2 leavelink" href="web.html">Web</a>
+            </li>
+
+            <li>
+                <a class="leavelink" href="studiestarts.html">Studiestartsprøve</a>
+            </li>
+            <li>
+                <a class="leavelink" href="emnesite.html">Emnesite</a>
+            </li>
+
+
+        </ul>
+
+        <ul class="active drop-down3 closed border">
+            <li>
+                <a class="nav-button3 leavelink" href="ux.html">UX</a>
+            </li>
+
+            <li>
+                <a class="leavelink" href="sketches.html">Sketches</a>
+            </li>
+            <li>
+                <a class="leavelink" href="prototype.html">Prototype</a>
+            </li>
+
+
+        </ul>
+        <ul class="active drop-down4 closed border">
+            <li>
+                <a class="nav-button4 leavelink" href="animation.html">Animation</a>
+            </li>
+        </ul>
+
+        <ul class="active drop-down5 closed border">
+            <li>
+                <a class="nav-button5 leavelink" href="indhold.html">Indhold</a>
+            </li>
+
+            <li>
+                <a class="leavelink" href="passionsvideo.html">Passion</a>
+            </li>
+            <li>
+                <a class="leavelink" href="virksomhedssite.html">Re-design</a>
+            </li>
+
+
+        </ul>
+        <ul class="active drop-down6 closed border">
+            <li>
+                <a id="tryk" class="nav-button6 leavelink" href="process.html">Process</a>
+            </li>
+        </ul>
+
+
+
+
+    </nav>
+
+
+
+
+
+    <div class="box">
+        <div class="crystal">
         </div>
-        <div class="column">
-            <img src="billeder/emnesite2.png" alt="pic" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-            <img src="billeder/emnesite3.png" alt="pic" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-            <img src="billeder/emnesite4.png" alt="pic" onclick="myFunction(this);">
+        <div class="processgrid1">
+            <div class="row processimgbox">
+                <div class="column process1">
+                    <img src="billeder/process1.png" alt="pic" onclick="myFunction(this);">
+                </div>
+                <div class="column process2">
+                    <img src="billeder/process2.png" alt="pic" onclick="myFunction(this);">
+                </div>
+                <div class="column process3">
+                    <img src="billeder/process3.png" alt="pic" onclick="myFunction(this);">
+                </div>
+                <div class="column process4">
+                    <img src="billeder/process4.png" alt="pic" onclick="myFunction(this);">
+                </div>
+
+            </div>
+
+            <div class="container">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg" style="width:100%">
+                <div id="imgtext"></div>
+            </div>
+
+
+            <div class="processgrid">
+                <h1 class="processoverskrift1">Process</h1>
+                <h2 class="processoverskrift2">Hvad har min process været?</h2>
+                <p class="processtxt">Prototypen er lavet i adobe XD. Jeg lærte om hvordan man kan forbinder de
+                    forskellige
+                    artboards of får dem til at virke
+                    som hjemmeside.
+                </p>
+            </div>
+
         </div>
 
     </div>
 
-    <div class="container">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-        <img id="expandedImg" style="width:100%">
-        <div id="imgtext"></div>
-    </div>
+
+    <footer>
+        <div class="socials">Socials:
+            <div class="instagram"></div>
+            <div class="facebook"></div>
+            <div class="twitter"></div>
+        </div>
+        <div class="linje1"></div>
+        <div class="copyright">© 2023 Ida Mikkelsen - All right reserved</div>
+        <div class="linje2"></div>
+        <div class="kontakt">Kontakt: +4561695429 Niji.ida@hotmail.com</div>
+    </footer>
 
     <script src="javascript.js"></script>
 </body>

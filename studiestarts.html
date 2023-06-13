@@ -2,6 +2,10 @@
 <html lang="da">
 
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="billeder/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="billeder/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="billeder/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +40,7 @@
 
         <ul class="active drop-down2 closed border">
             <li>
-                <a class="nav-button2 leavelink" href="web.html">Web</a>
+                <a id="tryk" class="nav-button2 leavelink" href="web.html">Web</a>
             </li>
 
             <li>
@@ -103,14 +107,28 @@
         </div>
         <div class="studiegrid1">
 
-            <div class="studiegallery">
-                <div class="studieimgbox">
-                    <div class="studieimg studie1"></div>
-                    <div class="studieimg studie2"></div>
-                    <div class="studieimg studie3"></div>
-                    <div class="studieimg studie4"></div>
+            <div class="row studieimgbox">
+                <div class="column studie1">
+                    <img src="billeder/studiestart1.png" alt="pic" onclick="myFunction(this);">
                 </div>
+                <div class="column studie2">
+                    <img src="billeder/studiestart2.png" alt="pic" onclick="myFunction(this);">
+                </div>
+                <div class="column studie3">
+                    <img src="billeder/studiestart3.png" alt="pic" onclick="myFunction(this);">
+                </div>
+                <div class="column studie4">
+                    <img src="billeder/studiestart4.png" alt="pic" onclick="myFunction(this);">
+                </div>
+
             </div>
+
+            <div class="container">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg" style="width:100%">
+                <div id="imgtext"></div>
+            </div>
+
             <div class="studiegrid">
                 <h1 class="studiestartoverskrift1">Studiestartsprøve</h1>
                 <h2 class="studiestartoverskrift2">Hvad har jeg lært?</h2>
@@ -122,7 +140,7 @@
                     Jeg blev også introduceret til FileZilla samt VSC med diverse plug-ins</p>
             </div>
 
-            <a href="cv.html">
+            <a href="https://hvidloegsida.dk/kea/02_web/01_website/website/index.html">
                 <div id="studiestartknap" class="knap">
                     <div class="knapbbypink">
 

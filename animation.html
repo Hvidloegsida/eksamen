@@ -2,6 +2,10 @@
 <html lang="da">
 
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="billeder/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="billeder/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="billeder/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,7 +69,7 @@
         </ul>
         <ul class="active drop-down4 closed border">
             <li>
-                <a class="nav-button4 leavelink" href="animation.html">Animation</a>
+                <a id="tryk" class="nav-button4 leavelink" href="animation.html">Animation</a>
             </li>
         </ul>
 
@@ -102,26 +106,38 @@
         <div class="crystal">
         </div>
         <div class="anigrid1">
-            <div class="anigallery">
-                <div class="aniimgbox">
-                    <div class="aniimg ani1"></div>
-                    <div class="aniimg ani2"></div>
-                    <div class="aniimg ani3"></div>
-                    <div class="aniimg ani4"></div>
+            <div class="row aniimgbox">
+                <div class="column ani1">
+                    <img src="billeder/ani1.png" alt="pic" onclick="myFunction(this);">
                 </div>
+                <div class="column ani2">
+                    <img src="billeder/ani2.png" alt="pic" onclick="myFunction(this);">
+                </div>
+                <div class="column ani3">
+                    <img src="billeder/ani3.png" alt="pic" onclick="myFunction(this);">
+                </div>
+                <div class="column ani4">
+                    <img src="billeder/ani4.png" alt="pic" onclick="myFunction(this);">
+                </div>
+
+            </div>
+
+            <div class="container">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg" style="width:100%">
+                <div id="imgtext"></div>
             </div>
 
 
-
             <div class="anigrid">
-                <h1 class="anioverskrift1">Prototype</h1>
+                <h1 class="anioverskrift1">Animation</h1>
                 <h2 class="anioverskrift2">Hvad har jeg lært?</h2>
                 <p class="anitxt">Prototypen er lavet i adobe XD. Jeg lærte om hvordan man kan forbinder de forskellige
                     artboards of får dem til at virke
                     som hjemmeside.
                 </p>
             </div>
-            <a href="cv.html">
+            <a href="https://hvidloegsida.dk/kea/04_animation/website/index.html">
                 <div id="aniknap" class="knap">
                     <div class="knapbbypink">
 

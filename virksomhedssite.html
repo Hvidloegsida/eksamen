@@ -2,6 +2,10 @@
 <html lang="da">
 
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="billeder/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="billeder/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="billeder/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,7 +75,7 @@
 
         <ul class="active drop-down5 closed border">
             <li>
-                <a class="nav-button5 leavelink" href="indhold.html">Indhold</a>
+                <a id="tryk" class="nav-button5 leavelink" href="indhold.html">Indhold</a>
             </li>
 
             <li>
@@ -102,13 +106,26 @@
         <div class="crystal">
         </div>
         <div class="virksomhedgrid1">
-            <div class="virksomhedgallery">
-                <div class="virksomhedimgbox">
-                    <div class="virksomhedimg virksomhed1"></div>
-                    <div class="virksomhedimg virksomhed2"></div>
-                    <div class="virksomhedimg virksomhed3"></div>
-                    <div class="virksomhedimg virksomhed4"></div>
+            <div class="row virksomhedimgbox">
+                <div class="column virksomhed1">
+                    <img src="billeder/virksomhed1.png" alt="pic" onclick="myFunction(this);">
                 </div>
+                <div class="column virksomhed2">
+                    <img src="billeder/virksomhed2.png" alt="pic" onclick="myFunction(this);">
+                </div>
+                <div class="column virksomhed3">
+                    <img src="billeder/virksomhed3.png" alt="pic" onclick="myFunction(this);">
+                </div>
+                <div class="column virksomhed4">
+                    <img src="billeder/virksomhed4.png" alt="pic" onclick="myFunction(this);">
+                </div>
+
+            </div>
+
+            <div class="container">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg" style="width:100%">
+                <div id="imgtext"></div>
             </div>
 
 
@@ -122,7 +139,7 @@
                     som hjemmeside.
                 </p>
             </div>
-            <a href="cv.html">
+            <a href="https://ubiquitous-pasca-cb58db.netlify.app/">
                 <div id="virksomhedknap" class="knap">
                     <div class="knapbbypink">
 

@@ -2,6 +2,10 @@
 <html lang="da">
 
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="billeder/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="billeder/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="billeder/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,7 +75,7 @@
 
         <ul class="active drop-down5 closed border">
             <li>
-                <a class="nav-button5 leavelink" href="indhold.html">Indhold</a>
+                <a id="tryk" class="nav-button5 leavelink" href="indhold.html">Indhold</a>
             </li>
 
             <li>
@@ -101,13 +105,26 @@
         <div class="crystal">
         </div>
         <div class="passiongrid1">
-            <div class="passiongallery">
-                <div class="passionimgbox">
-                    <div class="passionimg passion1"></div>
-                    <div class="passionimg passion2"></div>
-                    <div class="passionimg passion3"></div>
-                    <div class="passionimg passion4"></div>
+            <div class="row passionimgbox">
+                <div class="column passion1">
+                    <img src="billeder/passion1.png" alt="pic" onclick="myFunction(this);">
                 </div>
+                <div class="column passion2">
+                    <img src="billeder/passion2.png" alt="pic" onclick="myFunction(this);">
+                </div>
+                <div class="column passion3">
+                    <img src="billeder/passion3.png" alt="pic" onclick="myFunction(this);">
+                </div>
+                <div class="column passion4">
+                    <img src="billeder/passion4.png" alt="pic" onclick="myFunction(this);">
+                </div>
+
+            </div>
+
+            <div class="container">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg" style="width:100%">
+                <div id="imgtext"></div>
             </div>
 
 
@@ -121,7 +138,7 @@
                     som hjemmeside.
                 </p>
             </div>
-            <a href="cv.html">
+            <a href="http://hvidloegsida.dk/kea/05_indhold/clara/index.html">
                 <div id="passionknap" class="knap">
                     <div class="knapbbypink">
 
