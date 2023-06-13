@@ -486,21 +486,6 @@ footer {
   width: 35%;
 }
 
-/*text der ikke skal synlig*/
-#imgtext {
-  color: transparent;
-}
-
-/* knap skal ikke være synlig */
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: transparent;
-  font-size: 35px;
-  cursor: pointer;
-}
-
 /**INDHOLD PÅ INDEX SIDEN**/
 
 .indexlogo {
@@ -805,7 +790,7 @@ footer {
 /*ANIMATION*/
 
 .anigrid {
-  margin-top: -4%;
+  margin-top: -6%;
   margin-left: 5%;
   margin-right: 73%;
 }
@@ -829,7 +814,7 @@ footer {
 }
 #aniknap {
   position: absolute;
-  top: 105%;
+  top: 116%;
   left: -33%;
 }
 
@@ -888,7 +873,7 @@ footer {
 }
 #passionknap {
   position: absolute;
-  top: 105%;
+  top: 114%;
   left: -33%;
 }
 
@@ -1360,7 +1345,7 @@ footer {
   .studiestarttxt {
     position: relative;
     margin-right: -316%;
-    margin-top: 39%;
+    margin-top: 34%;
   }
 
   .studiegallery {
@@ -1435,7 +1420,7 @@ footer {
   .emnetxt {
     position: relative;
     margin-right: -316%;
-    margin-top: 39%;
+    margin-top: 34%;
   }
 
   .emnegallery {
@@ -1582,7 +1567,7 @@ footer {
 
   .prototxt {
     margin-right: -316%;
-    margin-top: 50%;
+    margin-top: 23%;
   }
 
   .protogallery {
@@ -1593,7 +1578,7 @@ footer {
     display: grid;
     grid-template-columns: 100%;
     position: relative;
-    top: 16%;
+    top: 22%;
     margin-left: 3%;
     padding-bottom: 5%;
   }
@@ -1631,7 +1616,7 @@ footer {
   }
 
   .anioverskrift1 {
-    margin-top: -44%;
+    margin-top: -37%;
   }
 
   .anioverskrift2 {
@@ -1641,7 +1626,7 @@ footer {
 
   .anitxt {
     margin-right: -316%;
-    margin-top: 64%;
+    margin-top: 19%;
   }
 
   .anigallery {
@@ -1711,7 +1696,7 @@ footer {
 
   .passiontxt {
     margin-right: -316%;
-    margin-top: 64%;
+    margin-top: 12%;
   }
 
   .passiongallery {
@@ -1722,7 +1707,7 @@ footer {
     display: grid;
     grid-template-columns: 100%;
     position: relative;
-    top: 16%;
+    top: 19%;
     margin-left: 3%;
     padding-bottom: 5%;
   }
@@ -1781,7 +1766,7 @@ footer {
 
   .virksomhedtxt {
     margin-right: -316%;
-    margin-top: 64%;
+    margin-top: 17%;
   }
 
   .virksomhedgallery {
@@ -1844,7 +1829,7 @@ footer {
 
   .processtxt {
     margin-right: -316%;
-    margin-top: 64%;
+    margin-top: 14%;
   }
 
   .processgallery {
